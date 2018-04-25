@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404596dd7d5c3f14a90b04faa44e1498, type: 3}
+  m_Name: PhysicsFingerSettings0
+  m_EditorClassIdentifier: 
+  MotorForce: 20
+  VelocityMultiplierColliding: 12
+  VelocityMultiplierNotColliding: 30
+  MaxTargetVelocity: 800
+  MaxTargetVelocityColliding: 80
+  MaxThumbVelocityColliding: 3
+  MaxThumbVelocityNotColliding: 15
+  ThumbRotDeltaColliding: 1
+  ThumbRotDeltaNotColliding: 8.04

@@ -7,6 +7,7 @@ public class Interactible : MonoBehaviour {
 
     public UnityEvent onGrab;
     public UnityEvent onRelease;
+    public UnityEvent onHold;
     public string[] tags;
     private GameObject collidedWith;
     private bool isGrabbed;
@@ -18,17 +19,24 @@ public class Interactible : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(isGrabbed)
+        {
+            if (IsGrabbing())
+            {
+                Hold();
+            }
+            else
+            {
+                Release();
+            }
+        }
 	}
 
     private void OnTriggerEnter(Collider col)
     {
-        if (HasTag(col.gameObject) && !isGrabbed)
+        if (HasTag(col.gameObject) && !isGrabbed && IsGrabbing())
         {
-            collidedWith = col.gameObject;
-            isGrabbed = true;
-            onGrab.Invoke();
-            Debug.Log("Colliding with: " + col.gameObject.name);
+            Grab(col);
         }
     }
 
@@ -36,11 +44,34 @@ public class Interactible : MonoBehaviour {
     {
         if(col.gameObject == collidedWith)
         {
-            collidedWith = null;
-            isGrabbed = false;
-            onRelease.Invoke();
-            Debug.Log("Stopped colliding with: " + col.gameObject.name);
+            Release();
         }
+    }
+
+    private void Grab(Collider col)
+    {
+        collidedWith = col.gameObject;
+        isGrabbed = true;
+        onGrab.Invoke();
+        Debug.Log("Colliding with: " + col.gameObject.name);
+    }
+
+    private void Hold()
+    {
+        onHold.Invoke();
+    }
+
+    private void Release()
+    {
+        Debug.Log("Stopped colliding with: " + collidedWith.gameObject.name);
+        collidedWith = null;
+        isGrabbed = false;
+        onRelease.Invoke();
+    }
+
+    private bool IsGrabbing()
+    {
+        return true;
     }
 
     private bool HasTag(GameObject hasTag)
