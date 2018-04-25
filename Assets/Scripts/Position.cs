@@ -13,6 +13,8 @@ public class Position : MonoBehaviour {
             other.transform.rotation = this.transform.rotation;
             other.transform.position = this.transform.position;
             other.GetComponent<Rigidbody>().isKinematic = true;
+			other.GetComponent<Rigidbody>().useGravity = false;
+			FreezeRigidbody (other.GetComponent<Rigidbody>());
             for (int i = 0; i < nextItems.Length; i++)
             {
                 nextItems[i].gameObject.SetActive(true);
@@ -30,4 +32,10 @@ public class Position : MonoBehaviour {
         }
         return false;
     }
+
+	private void FreezeRigidbody(Rigidbody rb)
+	{
+
+		rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+	}
 }

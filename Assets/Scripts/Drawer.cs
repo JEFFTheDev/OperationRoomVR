@@ -25,7 +25,8 @@ public class Drawer : MonoBehaviour {
         if(instantOpen)
             transform.localPosition = Vector3.Lerp(transform.localPosition, isClosed ? closePos : openPos, animSpeed * Time.deltaTime);
 
-        Lock();
+		Lock();
+        
     }
 
     public void GrabHandle(Transform t)
@@ -41,6 +42,7 @@ public class Drawer : MonoBehaviour {
     public void OpenByObjectPos(Transform t)
     {
         transform.position = (t.position - holdOffset);
+		Lock();
     }
 
     public void Lock()
