@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class Interactible : MonoBehaviour {
 
+
     public UnityEvent onGrab;
     public UnityEvent onRelease;
     public UnityEvent onHold;

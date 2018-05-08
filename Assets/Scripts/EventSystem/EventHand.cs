@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class EventHand : MonoBehaviour {
 
-    //Event messages
-    private const string grabMessage = "OnGrab";
-    private const string releaseMessage = "OnRelease";
-    private const string holdMessage = "OnHold";
-    private const string touchMessage = "OnTouch";
-    private const string gazeMessage = "OnGaze";
+    private Dictionary<GameObject, IInteractable> interactibles;
 
 	// Use this for initialization
 	void Start () {
-		
+        interactibles = new Dictionary<GameObject, IInteractable>();
 	}
 	
 	// Update is called once per frame
@@ -23,12 +18,27 @@ public class EventHand : MonoBehaviour {
 
     private void OnTriggerEnter(Collider col)
     {
-        SendEventMessage(col.gameObject, touchMessage);
+
     }
 
     private void OnTriggerExit(Collider col)
     {
         
+    }
+
+    private IInteractable GetIfInteractable(GameObject go)
+    {
+        MonoBehaviour[] list = go.GetComponents<MonoBehaviour>();
+        foreach (MonoBehaviour mb in list)
+        {
+            if (mb is IInteractable)
+            {
+                IInteractable interactable = (IInteractable)mb;
+                return interactable;
+            }
+        }
+
+        return null;
     }
 
     public void SendEventMessage(GameObject sendTo, string message)
