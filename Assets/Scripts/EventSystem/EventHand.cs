@@ -2,28 +2,59 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventHand : MonoBehaviour {
+public class EventHand : MonoBehaviour
+{
+    public ViveControllerInput input;
+    private Dictionary<GameObject, IInteractable> interactable;
+    private IInteractable currentGaze;
+    private IInteractable currentGrabbed;
 
-    private Dictionary<GameObject, IInteractable> interactibles;
+    // Use this for initialization
+    void Start()
+    {
+        interactable = new Dictionary<GameObject, IInteractable>();
+    }
 
-	// Use this for initialization
-	void Start () {
-        interactibles = new Dictionary<GameObject, IInteractable>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        if (input.Grab() && currentGaze != null && currentGrabbed == null)
+        {
+            currentGaze.OnGrab(transform);
+        }
+
+        if(input.Release() && currentGrabbed != null)
+        {
+            currentGrabbed.OnRelease(transform);
+            currentGrabbed = null;
+        }
+    }
 
     private void OnTriggerEnter(Collider col)
     {
+        IInteractable interactable = GetIfInteractable(col.gameObject);
 
+        if (interactable == null)
+            return;
+
+
+        if (!HasInteractable(col.gameObject))
+        {
+            this.interactable.Add(col.gameObject, interactable);
+        }
+
+        //TODO check if currentgaze != currentgrabbed
+        currentGaze = interactable;
     }
 
     private void OnTriggerExit(Collider col)
     {
-        
+        currentGaze = null;
+    }
+
+    private bool HasInteractable(GameObject g)
+    {
+        return interactable.ContainsKey(g);
     }
 
     private IInteractable GetIfInteractable(GameObject go)

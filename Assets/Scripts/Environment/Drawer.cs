@@ -26,7 +26,6 @@ public class Drawer : MonoBehaviour {
             transform.localPosition = Vector3.Lerp(transform.localPosition, isClosed ? closePos : openPos, animSpeed * Time.deltaTime);
 
 		Lock();
-        
     }
 
     public void GrabHandle(Transform t)
