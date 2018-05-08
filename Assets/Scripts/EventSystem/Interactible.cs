@@ -12,10 +12,11 @@ public class Interactible : MonoBehaviour {
     public string[] tags;
     private GameObject collidedWith;
     private bool isGrabbed;
+    public Vector3 startPos;
 
 	// Use this for initialization
 	void Start () {
-		
+        startPos = transform.position;
 	}
 	
 	// Update is called once per frame
