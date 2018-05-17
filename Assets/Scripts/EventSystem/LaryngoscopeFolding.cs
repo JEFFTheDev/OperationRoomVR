@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class LaryngoscopeFolding : MonoBehaviour {
 
-    private bool unfold=false;
+	Animator anim;
+	public GameObject scope;
 	// Use this for initialization
 	void Start () {
-		
+		anim = scope.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -17,10 +19,16 @@ public class LaryngoscopeFolding : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && unfold == false)
-        {
-            this.transform.Rotate(transform.up, 68.873f);
-        }
+		
+		if (other.tag == "Player" && !anim.GetBool("unfold") && GetComponent<Throwable>().attached) {
+			anim.SetBool("unfold",true);
+
+			
+		} else if (other.tag == "Player" && anim.GetBool("unfold") && GetComponent<Throwable>().attached){
+			anim.SetBool("unfold",false);
+
+		}
+			
             
     }
 }

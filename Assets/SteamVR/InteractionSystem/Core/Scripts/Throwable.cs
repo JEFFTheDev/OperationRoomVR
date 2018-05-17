@@ -35,7 +35,7 @@ namespace Valve.VR.InteractionSystem
 		public string[] attachEaseInAttachmentNames;
 
 		private VelocityEstimator velocityEstimator;
-		private bool attached = false;
+		public bool attached = false;
 		private float attachTime;
 		private Vector3 attachPosition;
 		private Quaternion attachRotation;
