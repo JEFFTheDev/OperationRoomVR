@@ -97,7 +97,7 @@ public class Interactible : MonoBehaviour
 
     private bool IsGrabbing()
     {
-        return InputController.Input.Grab();
+        return InputController.VRInput.Grab();
     }
 
     private bool HasTag(GameObject hasTag)
