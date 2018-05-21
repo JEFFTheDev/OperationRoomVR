@@ -2035,6 +2035,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   snapAttachEaseInTime: 0.15
   attachEaseInAttachmentNames: []
+  attached: 0
   onPickUp:
     m_PersistentCalls:
       m_Calls: []
@@ -2652,6 +2653,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   snapAttachEaseInTime: 0.15
   attachEaseInAttachmentNames: []
+  attached: 0
   onPickUp:
     m_PersistentCalls:
       m_Calls: []
@@ -2884,6 +2886,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 716232854}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &827279061
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1679434997}
+    m_Modifications:
+    - target: {fileID: 4098558852794300, guid: fa1636998b8931c488504ddf95b6969e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098558852794300, guid: fa1636998b8931c488504ddf95b6969e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098558852794300, guid: fa1636998b8931c488504ddf95b6969e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098558852794300, guid: fa1636998b8931c488504ddf95b6969e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098558852794300, guid: fa1636998b8931c488504ddf95b6969e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098558852794300, guid: fa1636998b8931c488504ddf95b6969e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098558852794300, guid: fa1636998b8931c488504ddf95b6969e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098558852794300, guid: fa1636998b8931c488504ddf95b6969e, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: fa1636998b8931c488504ddf95b6969e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &852039026
 GameObject:
   m_ObjectHideFlags: 0
@@ -4126,6 +4170,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   snapAttachEaseInTime: 0.15
   attachEaseInAttachmentNames: []
+  attached: 0
   onPickUp:
     m_PersistentCalls:
       m_Calls: []
