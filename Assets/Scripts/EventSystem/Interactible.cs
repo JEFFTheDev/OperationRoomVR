@@ -36,6 +36,8 @@ public class Interactible : MonoBehaviour {
 
     private void OnTriggerEnter(Collider col)
     {
+        Debug.Log("OnTriggerEnter");
+        Debug.Log(HasTag(col.gameObject));
         if (HasTag(col.gameObject) && !isGrabbed && IsGrabbing())
         {
             Grab(col);
