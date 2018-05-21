@@ -174,6 +174,7 @@ ModelImporter:
     13700008: Hair
     13700010: Shoes
     13700012: Tops
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
