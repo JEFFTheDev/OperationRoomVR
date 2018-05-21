@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: f89d849ce9cb06e49897895d0475253a
+timeCreated: 1526905008
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BottomSupport
+    100004: DrawerB01
+    100006: DrawerB02
+    100008: DrawerB03
+    100010: DrawerB04
+    100012: DrawerBar
+    100014: DrawerContainer
+    100016: DrawerS01
+    100018: DrawerS02
+    100020: Handle01
+    100022: Handle02
+    100024: Handle03
+    100026: Handle04
+    100028: Handle05
+    100030: Handle06
+    100032: TopWorkspace
+    100034: Wheel01
+    100036: Wheel02
+    100038: Wheel03
+    100040: Wheel04
+    400000: //RootNode
+    400002: BottomSupport
+    400004: DrawerB01
+    400006: DrawerB02
+    400008: DrawerB03
+    400010: DrawerB04
+    400012: DrawerBar
+    400014: DrawerContainer
+    400016: DrawerS01
+    400018: DrawerS02
+    400020: Handle01
+    400022: Handle02
+    400024: Handle03
+    400026: Handle04
+    400028: Handle05
+    400030: Handle06
+    400032: TopWorkspace
+    400034: Wheel01
+    400036: Wheel02
+    400038: Wheel03
+    400040: Wheel04
+    2100000: GrayMaterial
+    2100002: WheelColour
+    2100004: DrawerColor
+    2300000: BottomSupport
+    2300002: DrawerB01
+    2300004: DrawerB02
+    2300006: DrawerB03
+    2300008: DrawerB04
+    2300010: DrawerBar
+    2300012: DrawerContainer
+    2300014: DrawerS01
+    2300016: DrawerS02
+    2300018: Handle01
+    2300020: Handle02
+    2300022: Handle03
+    2300024: Handle04
+    2300026: Handle05
+    2300028: Handle06
+    2300030: TopWorkspace
+    2300032: Wheel01
+    2300034: Wheel02
+    2300036: Wheel03
+    2300038: Wheel04
+    3300000: BottomSupport
+    3300002: DrawerB01
+    3300004: DrawerB02
+    3300006: DrawerB03
+    3300008: DrawerB04
+    3300010: DrawerBar
+    3300012: DrawerContainer
+    3300014: DrawerS01
+    3300016: DrawerS02
+    3300018: Handle01
+    3300020: Handle02
+    3300022: Handle03
+    3300024: Handle04
+    3300026: Handle05
+    3300028: Handle06
+    3300030: TopWorkspace
+    3300032: Wheel01
+    3300034: Wheel02
+    3300036: Wheel03
+    3300038: Wheel04
+    4300000: BottomSupport
+    4300002: Wheel01
+    4300004: Wheel02
+    4300006: Wheel03
+    4300008: Wheel04
+    4300010: DrawerContainer
+    4300012: DrawerS01
+    4300014: Handle01
+    4300016: DrawerS02
+    4300018: Handle02
+    4300020: DrawerB02
+    4300022: Handle04
+    4300024: DrawerB01
+    4300026: Handle03
+    4300028: DrawerB03
+    4300030: Handle05
+    4300032: DrawerB04
+    4300034: Handle06
+    4300036: DrawerBar
+    4300038: TopWorkspace
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
