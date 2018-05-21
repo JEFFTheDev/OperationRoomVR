@@ -23,6 +23,7 @@ public class LaryngoscopeFolding : MonoBehaviour {
 		if (other.tag == "Player" && !anim.GetBool("unfold") && GetComponent<Throwable>().attached) {
 			anim.SetBool("unfold",true);
 
+
 			
 		} else if (other.tag == "Player" && anim.GetBool("unfold") && GetComponent<Throwable>().attached){
 			anim.SetBool("unfold",false);
