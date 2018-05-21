@@ -5,12 +5,11 @@ using Valve.VR.InteractionSystem;
 
 public class DrawerInventory : MonoBehaviour {
 
-    private List<GameObject> items;
-    public GameObject[] ignoreIfParent;
+    private List<Transform> items;
 
 	// Use this for initialization
 	void Start () {
-        items = new List<GameObject>();
+        items = new List<Transform>();
 	}
 	
 	// Update is called once per frame
@@ -20,10 +19,11 @@ public class DrawerInventory : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        Rigidbody otherRb = other.GetComponent<Rigidbody>();
+        Rigidbody otherRb = other.transform.GetComponent<Rigidbody>();
         Debug.Log("enter");
-        if (otherRb && !other.isTrigger)
+        if (otherRb && !other.isTrigger && !HasItem(other.transform))
         {
+            AddItem(other.transform);
             FreezeRigidbody(otherRb);
             other.transform.parent = transform;
         }
@@ -32,37 +32,30 @@ public class DrawerInventory : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
-        Rigidbody otherRb = other.GetComponent<Rigidbody>();
+        Rigidbody otherRb = other.transform.GetComponent<Rigidbody>();
         Debug.Log("exit");
-        if (otherRb && !other.isTrigger)
+        if (otherRb && !other.isTrigger && HasItem(other.transform))
         {
+            RemoveItem(other.transform);
             otherRb.constraints = RigidbodyConstraints.None;
         }
     }
 
-    private void AddItem(Rigidbody item, bool add)
+    private void AddItem(Transform t)
     {
-        item.transform.SetParent(add ? transform : null);
-        //item.useGravity = !add;
-        item.isKinematic = add;
+        items.Add(t);
     }
 
-    private bool HasItem(GameObject g)
+    private void RemoveItem(Transform t)
     {
-        return items.Contains(g);
+        items.Remove(t);
     }
 
-    private bool Ignore(GameObject go)
+    private bool HasItem(Transform t)
     {
-        foreach(GameObject g in ignoreIfParent)
-        {
-            if (go.transform.parent == g.transform)
-                return true;
-        }
-
-        return false;
+        return items.Contains(t);
     }
-
+    
     private void FreezeRigidbody(Rigidbody rb)
 	{
         rb.constraints = RigidbodyConstraints.FreezeAll;

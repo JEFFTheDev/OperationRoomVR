@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Interactible : MonoBehaviour {
+public class Interactible : MonoBehaviour
+{
 
 
     public UnityEvent onGrab;
@@ -13,15 +14,21 @@ public class Interactible : MonoBehaviour {
     private GameObject collidedWith;
     private bool isGrabbed;
     public Vector3 startPos;
+    private Shader startShader;
+    private bool isHighlighted;
+    private Collider currentCol;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
+        startShader = GetComponent<MeshRenderer>().material.shader;
         startPos = transform.position;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(isGrabbed)
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (isGrabbed)
         {
             if (IsGrabbing())
             {
@@ -32,22 +39,39 @@ public class Interactible : MonoBehaviour {
                 Release();
             }
         }
-	}
+
+        if (!isGrabbed && isHighlighted && IsGrabbing())
+        {
+            Grab(currentCol);
+        }
+    }
 
     private void OnTriggerEnter(Collider col)
     {
-        if (HasTag(col.gameObject) && !isGrabbed && IsGrabbing())
+        if (HasTag(col.gameObject))
         {
-            Grab(col);
+            currentCol = col;
+            Debug.Log("OnTriggerEnter");
+            Debug.Log(HasTag(col.gameObject));
+            if (!isGrabbed && IsGrabbing())
+            {
+                Grab(col);
+            }
+
+
+            Highlight(true);
         }
     }
 
     private void OnTriggerExit(Collider col)
     {
-        if(col.gameObject == collidedWith)
+        if (col.gameObject == collidedWith)
         {
+            currentCol = null;
             Release();
         }
+
+        Highlight(false);
     }
 
     private void Grab(Collider col)
@@ -73,17 +97,24 @@ public class Interactible : MonoBehaviour {
 
     private bool IsGrabbing()
     {
-        return true;
+        return InputController.Input.Grab();
     }
 
     private bool HasTag(GameObject hasTag)
     {
-        foreach(string t in tags)
+        foreach (string t in tags)
         {
-            if(hasTag.tag == t)
+            if (hasTag.tag == t)
                 return true;
         }
 
         return false;
+    }
+
+    private void Highlight(bool hightlight)
+    {
+        Material m = GetComponent<MeshRenderer>().material;
+        m.shader = hightlight ? Shader.Find("Outlined/Silhouetted Diffuse") : startShader;
+        isHighlighted = hightlight;
     }
 }
