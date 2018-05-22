@@ -8,6 +8,8 @@ public class Drawer : MonoBehaviour {
     public Vector3 openPos;
     public float animSpeed;
     public bool instantOpen;
+    public Vector3 maxPos;
+    public Vector3 minPos;
     private Vector3 closePos;
     private bool isClosed;
     private Vector3 holdOffset;
@@ -47,9 +49,10 @@ public class Drawer : MonoBehaviour {
     public void Lock()
     {
         Vector3 pos = transform.localPosition;
-        pos.x = lockLocX ? localStartPos.x : pos.x;
-        pos.y = lockLocY ? localStartPos.y : pos.y;
-        pos.z = lockLocZ ? localStartPos.z : pos.z;
+        pos.x = lockLocX ? localStartPos.x : Mathf.Clamp(pos.x, minPos.x, maxPos.x);
+        pos.y = lockLocY ? localStartPos.y : Mathf.Clamp(pos.y, minPos.y, maxPos.y);
+        pos.z = lockLocZ ? localStartPos.z : Mathf.Clamp(pos.z, minPos.z, maxPos.z);
+        
         transform.localPosition = pos;
     }
 
