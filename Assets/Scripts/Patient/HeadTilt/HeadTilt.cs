@@ -8,19 +8,31 @@ using System.Collections;
 
 public class HeadTilt : MonoBehaviour
 {
-
+    
     protected Animator animator;
     public Transform lookObj = null;
+    private Animator[] layers;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        GameObject trans = GameObject.Find("TransparentLayer");
+        GameObject rend = GameObject.Find("RenderLayer");
+        //layers = GetComponentsInChildren<Animator>();
+        layers[0] = animator;
+        layers[1] = trans.GetComponent<Animator>();
+        layers[2] = rend.GetComponent<Animator>();
+        
     }
 
     //a callback for calculating IK
     void OnAnimatorIK()
     {
-        animator.SetLookAtWeight(1);
-        animator.SetLookAtPosition(lookObj.position);
+        foreach(Animator a in layers)
+        {
+            a.SetLookAtWeight(1);
+            a.SetLookAtPosition(lookObj.position);
+
+        }
     }
 }

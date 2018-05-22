@@ -20,12 +20,13 @@ public class LaryngoscopeFolding : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
 		
-		if (other.tag == "Player" && !anim.GetBool("unfold") && GetComponent<Throwable>().attached) {
+		if (other.tag == "Player" && !anim.GetBool("unfold") && GetComponent<Throwable>().attached)
+        {
 			anim.SetBool("unfold",true);
-
-
-			
-		} else if (other.tag == "Player" && anim.GetBool("unfold") && GetComponent<Throwable>().attached){
+            
+        }
+        else if (other.tag == "Player" && anim.GetBool("unfold") && GetComponent<Throwable>().attached)
+        {
 			anim.SetBool("unfold",false);
 
 		}

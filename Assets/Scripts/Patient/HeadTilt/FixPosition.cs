@@ -23,13 +23,13 @@ public class FixPosition : MonoBehaviour {
 			aux = true;
 		}
 
-		if (!GetComponent<Throwable> ().attached && aux) {
-			rot = transform.rotation;
-			aux = false;
-		}
+		//if (!GetComponent<Throwable> ().attached && aux) {
+		//	rot = transform.rotation;
+		//	aux = false;
+		//}
 
-		if (!GetComponent<Throwable> ().attached && !aux) {
-			transform.rotation = rot;
-		}
+		//if (!GetComponent<Throwable> ().attached && !aux) {
+		//	transform.rotation = rot;
+		//}
 	}
 }

@@ -53,6 +53,7 @@ public class XRayObject : MonoBehaviour {
             GameObject transparentLayer = CreateObjectShaderLayer(this.gameObject, xRayRevealShader);
             transparentLayer.transform.position = transform.position;
             transparentLayer.transform.rotation = transform.rotation;
+            Destroy(transparentLayer.GetComponent<HeadTilt>());
             transparentLayer.name = "TransparentLayer";
             MakeTransparent(transparentLayer);
 
@@ -67,6 +68,7 @@ public class XRayObject : MonoBehaviour {
             renderLayer.transform.position = pos;
 
             renderLayer.transform.rotation = transform.rotation;
+            Destroy(renderLayer.GetComponent<HeadTilt>());
             
             //Make this layer ignored by xray
             ApplyShader(this.gameObject, xRayIgnoreShader);
