@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 8c8e44555f5040f4ebe9161866e1ae78
-timeCreated: 1525792752
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -164,6 +162,7 @@ ModelImporter:
     4300052: chunk026_group000_sub002
     4300054: chunk027_group000_sub002_filled001
     4300056: chunk028_group000_sub002_filled001
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -183,6 +182,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -207,6 +207,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

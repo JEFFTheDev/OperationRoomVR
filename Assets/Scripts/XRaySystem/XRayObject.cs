@@ -117,7 +117,7 @@ public class XRayObject : MonoBehaviour {
 
     private void MakeTransparent(GameObject g)
     {
-        foreach(MeshRenderer m in g.GetComponentsInChildren<MeshRenderer>())
+        foreach(Renderer m in g.GetComponentsInChildren<Renderer>())
         {
             m.material.SetFloat("_Mode", 3);
             Color c = m.material.color;
@@ -128,7 +128,7 @@ public class XRayObject : MonoBehaviour {
 
     private void ApplyShader(GameObject g, Shader shader)
     {
-        foreach (MeshRenderer m in g.GetComponentsInChildren<MeshRenderer>())
+        foreach (Renderer m in g.GetComponentsInChildren<Renderer>())
         {
             Material copy = new Material(shader);
             copy.CopyPropertiesFromMaterial(m.material);
@@ -139,7 +139,7 @@ public class XRayObject : MonoBehaviour {
     
     private void SetRenderQueue(GameObject g, int queue)
     {
-        foreach(MeshRenderer m in g.GetComponentsInChildren<MeshRenderer>())
+        foreach(Renderer m in g.GetComponentsInChildren<Renderer>())
         {
             m.material.renderQueue = queue;
         }
@@ -155,7 +155,7 @@ public class XRayObject : MonoBehaviour {
 
     private void UpdateMaterials(GameObject g)
     {
-        foreach (MeshRenderer m in g.GetComponentsInChildren<MeshRenderer>())
+        foreach (Renderer m in g.GetComponentsInChildren<Renderer>())
         {
             MaterialChanged(m.material, WorkflowMode.Metallic);
         }
