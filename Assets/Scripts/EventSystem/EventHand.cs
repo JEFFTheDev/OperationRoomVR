@@ -4,77 +4,93 @@ using UnityEngine;
 
 public class EventHand : MonoBehaviour
 {
+
     public ViveControllerInput input;
-    private Dictionary<GameObject, IInteractable> interactable;
-    private IInteractable currentGaze;
-    private IInteractable currentGrabbed;
+    private GameObject currentTouched;
+    private GameObject currentGrabbed;
 
     // Use this for initialization
     void Start()
     {
-        interactable = new Dictionary<GameObject, IInteractable>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (input.Grab() && currentGaze != null && currentGrabbed == null)
+        if (input.TriggerDown() && currentTouched != null && currentGrabbed == null)
         {
-            currentGaze.OnGrab(transform);
-        }
+            currentGrabbed = currentTouched;
 
-        if(input.Release() && currentGrabbed != null)
+            foreach (IInteractable i in GetInteractables(currentGrabbed))
+            {
+                i.OnGrab(transform);
+            }
+
+            foreach (IInteractable i in GetInteractables(currentTouched))
+            {
+                i.OnTouchStop(transform);
+            }
+
+            currentTouched = null;
+        }
+        
+        if(input.TriggerUp() && currentGrabbed != null && currentTouched != null)
         {
-            currentGrabbed.OnRelease(transform);
+            foreach (IInteractable i in GetInteractables(currentGrabbed))
+            {
+                i.OnRelease(transform);
+            }
+
             currentGrabbed = null;
         }
     }
 
     private void OnTriggerEnter(Collider col)
     {
-        IInteractable interactable = GetIfInteractable(col.gameObject);
-
-        if (interactable == null)
-            return;
-
-
-        if (!HasInteractable(col.gameObject))
+        if(currentTouched == null)
         {
-            this.interactable.Add(col.gameObject, interactable);
-        }
+            IInteractable[] interactables = GetInteractables(col.gameObject);
 
-        //TODO check if currentgaze != currentgrabbed
-        currentGaze = interactable;
+            foreach (IInteractable i in interactables)
+            {
+                i.OnTouch(transform);
+            }
+
+            currentTouched = col.gameObject;
+        }
+        
     }
 
     private void OnTriggerExit(Collider col)
     {
-        currentGaze = null;
+        if(col.gameObject == currentTouched)
+        {
+            IInteractable[] interactables = GetInteractables(col.gameObject);
+
+            foreach (IInteractable i in interactables)
+            {
+                i.OnTouchStop(transform);
+            }
+
+            currentTouched = null;
+        }
     }
 
-    private bool HasInteractable(GameObject g)
-    {
-        return interactable.ContainsKey(g);
-    }
-
-    private IInteractable GetIfInteractable(GameObject go)
+    private IInteractable[] GetInteractables(GameObject go)
     {
         MonoBehaviour[] list = go.GetComponents<MonoBehaviour>();
+        List<IInteractable> interactables = new List<IInteractable>();
+
         foreach (MonoBehaviour mb in list)
         {
             if (mb is IInteractable)
             {
                 IInteractable interactable = (IInteractable)mb;
-                return interactable;
+                interactables.Add(interactable);
             }
         }
 
-        return null;
-    }
-
-    public void SendEventMessage(GameObject sendTo, string message)
-    {
-        //Send event message to object and this hand transform with it
-        sendTo.SendMessage(message, transform, SendMessageOptions.DontRequireReceiver);
+        return interactables.ToArray();
     }
 }
