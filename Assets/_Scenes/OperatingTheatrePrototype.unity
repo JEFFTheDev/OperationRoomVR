@@ -371,6 +371,8 @@ MonoBehaviour:
   openPos: {x: 0, y: 0.48, z: -0.5}
   animSpeed: 8
   instantOpen: 1
+  maxPos: {x: 0, y: 0, z: 0}
+  minPos: {x: 0, y: 0, z: 0}
 --- !u!64 &51166852
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1987,6 +1989,8 @@ MonoBehaviour:
   openPos: {x: 0, y: 0.16, z: -0.5}
   animSpeed: 8
   instantOpen: 1
+  maxPos: {x: 0, y: 0, z: 0}
+  minPos: {x: 0, y: 0, z: 0}
 --- !u!64 &654013028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2244,7 +2248,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &689286949
 MonoBehaviour:
@@ -3467,6 +3471,8 @@ MonoBehaviour:
   openPos: {x: 0, y: 0.32, z: -0.5}
   animSpeed: 8
   instantOpen: 1
+  maxPos: {x: 0, y: 0, z: 0}
+  minPos: {x: 0, y: 0, z: 0}
 --- !u!64 &939607855
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3511,7 +3517,7 @@ Transform:
   - {fileID: 852039027}
   - {fileID: 297164303}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970549036
 GameObject:
@@ -3871,7 +3877,7 @@ Transform:
   m_LocalScale: {x: 0.16, y: 0.16, z: 0.16}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &996894315
 MonoBehaviour:
@@ -3948,7 +3954,7 @@ Transform:
   - {fileID: 566201359}
   - {fileID: 2106568937}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1100272590
 Prefab:
@@ -4167,7 +4173,7 @@ Transform:
   - {fileID: 1278682358}
   - {fileID: 249543883}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -30.000002, z: 0}
 --- !u!1 &1227887660
 GameObject:
@@ -4749,7 +4755,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1435375067
 GameObject:
@@ -4884,6 +4890,8 @@ MonoBehaviour:
   openPos: {x: 0, y: -0.16, z: -0.5}
   animSpeed: 8
   instantOpen: 1
+  maxPos: {x: 0, y: 0, z: 0}
+  minPos: {x: 0, y: 0, z: 0}
 --- !u!64 &1451673376
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4978,6 +4986,8 @@ MonoBehaviour:
   openPos: {x: 0, y: 0, z: -0.5}
   animSpeed: 8
   instantOpen: 1
+  maxPos: {x: 0, y: 0, z: 0}
+  minPos: {x: 0, y: 0, z: 0}
 --- !u!64 &1526176825
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8605,7 +8615,7 @@ Transform:
   - {fileID: 1978383477}
   - {fileID: 466756872}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1620377467
 GameObject:
@@ -8711,6 +8721,8 @@ MonoBehaviour:
   openPos: {x: 0.5, y: 0.8, z: 0}
   animSpeed: 10
   instantOpen: 0
+  maxPos: {x: 0, y: 0, z: 0}
+  minPos: {x: 0, y: 0, z: 0}
 --- !u!23 &1622658796
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8764,6 +8776,56 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1622658793}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1633888557
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 7f48c22e9c892be4c969f95ffae835ad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.498
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7f48c22e9c892be4c969f95ffae835ad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.856
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7f48c22e9c892be4c969f95ffae835ad, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.614
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7f48c22e9c892be4c969f95ffae835ad, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.28279424
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7f48c22e9c892be4c969f95ffae835ad, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6480953
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7f48c22e9c892be4c969f95ffae835ad, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6480952
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7f48c22e9c892be4c969f95ffae835ad, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.28279427
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7f48c22e9c892be4c969f95ffae835ad, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7f48c22e9c892be4c969f95ffae835ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7f48c22e9c892be4c969f95ffae835ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 132.852
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7f48c22e9c892be4c969f95ffae835ad, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &1635570553
 GameObject:
   m_ObjectHideFlags: 0
@@ -8846,7 +8908,7 @@ Transform:
   m_LocalScale: {x: 1.1995614, y: 0.10000014, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 90.00001}
 --- !u!1 &1637610685
 GameObject:
@@ -9027,6 +9089,8 @@ MonoBehaviour:
   openPos: {x: 0.5, y: 1.05, z: 0}
   animSpeed: 10
   instantOpen: 1
+  maxPos: {x: 0, y: 0, z: 0}
+  minPos: {x: 0, y: 0, z: 0}
 --- !u!23 &1686448407
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9431,6 +9495,8 @@ MonoBehaviour:
   openPos: {x: 0.5, y: 1.3, z: 0}
   animSpeed: 10
   instantOpen: 1
+  maxPos: {x: 0, y: 0, z: 0}
+  minPos: {x: 0, y: 0, z: 0}
 --- !u!23 &1756231048
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9827,6 +9893,8 @@ MonoBehaviour:
   openPos: {x: 0.5, y: 1.05, z: 0}
   animSpeed: 10
   instantOpen: 1
+  maxPos: {x: 0, y: 0, z: 0}
+  minPos: {x: 0, y: 0, z: 0}
 --- !u!23 &1896450237
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9930,6 +9998,8 @@ MonoBehaviour:
   openPos: {x: 0.5, y: 0.8, z: 0}
   animSpeed: 10
   instantOpen: 0
+  maxPos: {x: 0, y: 0, z: 0}
+  minPos: {x: 0, y: 0, z: 0}
 --- !u!23 &1971291704
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10390,6 +10460,8 @@ MonoBehaviour:
   openPos: {x: 0.5, y: 0.8, z: 0}
   animSpeed: 10
   instantOpen: 0
+  maxPos: {x: 0, y: 0, z: 0}
+  minPos: {x: 0, y: 0, z: 0}
 --- !u!1 &2084163239
 GameObject:
   m_ObjectHideFlags: 0
