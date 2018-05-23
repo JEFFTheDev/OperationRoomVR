@@ -51,6 +51,7 @@ public class XRayObject : MonoBehaviour {
         {
             //Create new layer and make it transparent
             GameObject transparentLayer = CreateObjectShaderLayer(this.gameObject, xRayRevealShader);
+            Destroy(transparentLayer.GetComponent<HeadTilt>());
             transparentLayer.transform.position = transform.position;
             transparentLayer.transform.rotation = transform.rotation;
             transparentLayer.name = "TransparentLayer";
@@ -58,6 +59,7 @@ public class XRayObject : MonoBehaviour {
 
             //Create new layer to render this one
             GameObject renderLayer = CreateObjectShaderLayer(this.gameObject, xRayIgnoreRendShader);
+            Destroy(renderLayer.GetComponent<HeadTilt>());
             renderLayer.name = "RenderLayer";
             
             Vector3 pos = renderLayer.transform.position;
