@@ -6,7 +6,7 @@ using Valve.VR.InteractionSystem;
 
 public class ViveControllerInput : MonoBehaviour, IInput {
 
-    public Hand right;
+    public Hand hand;
 
     // Use this for initialization
     void Start()
@@ -17,17 +17,22 @@ public class ViveControllerInput : MonoBehaviour, IInput {
     // Update is called once per frame
     void Update()
     {
-        if(right.controller != null)
-            Debug.Log("Grabbing: " + Grab());
+
     }
 
-    public bool Grab()
+    public bool TriggerDown()
     {
-        return right.controller.GetPress(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
+        if (hand.controller == null)
+            return false;
+
+        return hand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
     }
 
-    public bool Release()
+    public bool TriggerUp()
     {
-        return false;
+        if (hand.controller == null)
+            return false;
+
+        return !hand.controller.GetPressUp(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
     }
 }
