@@ -641,7 +641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: {fileID: 1485562625481182}
-  spotlight: {fileID: 0}
+  spotlight: {fileID: 108640007842783884}
 --- !u!114 &114995782951450684
 MonoBehaviour:
   m_ObjectHideFlags: 1
