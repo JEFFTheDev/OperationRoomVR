@@ -7,6 +7,11 @@ public class Highlight : MonoBehaviour, IInteractable {
 
     private bool isHighlighted;
     private Shader startShader;
+
+    private void Start()
+    {
+        startShader = GetComponent<MeshRenderer>().material.shader;
+    }
     
     public void OnTouch(Transform hand)
     {
