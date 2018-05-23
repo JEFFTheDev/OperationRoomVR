@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IInput {
 
-    bool Grab();
-    bool Release();
+    bool TriggerDown();
+    bool TriggerUp();
 
 }
