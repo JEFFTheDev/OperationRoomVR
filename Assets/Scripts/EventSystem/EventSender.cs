@@ -7,15 +7,14 @@ public class EventSender : MonoBehaviour, IInteractable {
 
 
     //Event messages
-    private const string grabMessage = "OnGrab";
-    private const string releaseMessage = "OnRelease";
-    private const string onTouchMessage = "OnTouch";
-    private const string onTouchStopMessage = "OnTouchStop";
-
+    private const string grabMessage = "OnGrabEvent";
+    private const string releaseMessage = "OnReleaseEvent";
+    private const string onTouchMessage = "OnTouchEvent";
+    private const string onTouchStopMessage = "OnTouchStopEvent";
+    public bool sendToParentIfNull;
+    public bool callOnSelfIfNull;
     public Transform onGrabSendTo;
     public Transform onTouchSendTo;
-
-    public bool sendToParentIfNull;
 
     // Use this for initialization
     void Start () {
@@ -27,7 +26,16 @@ public class EventSender : MonoBehaviour, IInteractable {
             if (onTouchSendTo == null)
                 onTouchSendTo = transform.parent;
         }
-	}
+
+        if (callOnSelfIfNull)
+        {
+            if (onGrabSendTo == null)
+                onGrabSendTo = transform;
+
+            if (onTouchSendTo == null)
+                onTouchSendTo = transform;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
