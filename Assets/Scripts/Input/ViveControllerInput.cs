@@ -6,12 +6,15 @@ using Valve.VR.InteractionSystem;
 
 public class ViveControllerInput : MonoBehaviour, IInput {
 
-    public Hand hand;
+    public SteamVR_TrackedController controller;
+    private bool triggerDown;
+    private bool triggerUp;
 
     // Use this for initialization
     void Start()
     {
-
+        controller.TriggerClicked += delegate { triggerDown = true; triggerUp = false; };
+        controller.TriggerUnclicked += delegate { triggerDown = false; triggerUp = true; };
     }
 
     // Update is called once per frame
@@ -20,19 +23,18 @@ public class ViveControllerInput : MonoBehaviour, IInput {
 
     }
 
+    private void say(object sender, ClickedEventArgs e)
+    {
+        Debug.Log("down or up");
+    }
+
     public bool TriggerDown()
     {
-        if (hand.controller == null)
-            return false;
-
-        return hand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
+        return triggerDown;
     }
 
     public bool TriggerUp()
     {
-        if (hand.controller == null)
-            return false;
-
-        return !hand.controller.GetPressUp(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
+        return triggerUp;
     }
 }

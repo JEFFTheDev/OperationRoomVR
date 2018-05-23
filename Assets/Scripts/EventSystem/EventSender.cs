@@ -45,22 +45,26 @@ public class EventSender : MonoBehaviour, IInteractable {
     //OnGrab and OnRelease send their message to the same object
     public void OnGrab(Transform hand)
     {
+        //Debug.Log("Grabbing: " + onGrabSendTo.name);
         SendEventMessage(grabMessage, onGrabSendTo, hand);
     }
 
     public void OnRelease(Transform hand)
     {
+        //Debug.Log("Releasing: " + onGrabSendTo.name);
         SendEventMessage(releaseMessage, onGrabSendTo, hand);
     }
 
     //OnTouch and OnTouchStop send their message to the same object
     public void OnTouch(Transform hand)
     {
+       // Debug.Log("Touching: " + onTouchSendTo.name);
         SendEventMessage(onTouchMessage, onTouchSendTo, hand);
     }
 
     public void OnTouchStop(Transform hand)
     {
+        //Debug.Log("Touching stopping: " + onTouchSendTo.name);
         SendEventMessage(onTouchStopMessage, onTouchSendTo, hand);
     }
     
