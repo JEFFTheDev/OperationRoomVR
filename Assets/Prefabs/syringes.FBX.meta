@@ -1,17 +1,110 @@
 fileFormatVersion: 2
-guid: dd2e3d3cd4a629b4291b58c722939ec8
-timeCreated: 1525968392
+guid: 8ff487aebfda7374584179e349ae9cd7
+timeCreated: 1527070733
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: sy_Shape_1
+    100000: Box001
+    100002: color
+    100004: color001
+    100006: color002
+    100008: color003
+    100010: color004
+    100012: drug
+    100014: drug006
+    100016: drug007
+    100018: drug008
+    100020: drug009
+    100022: syringe
+    100024: syringe012
+    100026: syringe013
+    100028: syringe014
+    100030: syringe015
+    100032: syringe1
+    100034: syringe2
+    100036: syringe3
+    100038: syringe4
+    100040: syringe5
+    100042: //RootNode
+    400000: Box001
+    400002: color
+    400004: color001
+    400006: color002
+    400008: color003
+    400010: color004
+    400012: drug
+    400014: drug006
+    400016: drug007
+    400018: drug008
+    400020: drug009
+    400022: syringe
+    400024: syringe012
+    400026: syringe013
+    400028: syringe014
+    400030: syringe015
+    400032: syringe1
+    400034: syringe2
+    400036: syringe3
+    400038: syringe4
+    400040: syringe5
+    400042: //RootNode
+    2300000: Box001
+    2300002: color
+    2300004: color001
+    2300006: color002
+    2300008: color003
+    2300010: color004
+    2300012: drug
+    2300014: drug006
+    2300016: drug007
+    2300018: drug008
+    2300020: drug009
+    2300022: syringe
+    2300024: syringe012
+    2300026: syringe013
+    2300028: syringe014
+    2300030: syringe015
+    3300000: Box001
+    3300002: color
+    3300004: color001
+    3300006: color002
+    3300008: color003
+    3300010: color004
+    3300012: drug
+    3300014: drug006
+    3300016: drug007
+    3300018: drug008
+    3300020: drug009
+    3300022: syringe
+    3300024: syringe012
+    3300026: syringe013
+    3300028: syringe014
+    3300030: syringe015
+    4300000: Box001
+    4300002: syringe
+    4300004: drug
+    4300006: color
+    4300008: color001
+    4300010: drug006
+    4300012: syringe012
+    4300014: color002
+    4300016: drug007
+    4300018: syringe013
+    4300020: color003
+    4300022: drug008
+    4300024: syringe014
+    4300026: color004
+    4300028: drug009
+    4300030: syringe015
+    7400000: Take 001
     9500000: //RootNode
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 60e6e85e04624594eba0b23c2bb99430, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
