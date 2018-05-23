@@ -18,7 +18,7 @@ public class EventHand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (input.TriggerDown() && currentTouched != null && currentGrabbed == null)
+        if (input.TriggerDown() && currentGrabbed == null && currentTouched != null )
         {
             currentGrabbed = currentTouched;
 
@@ -35,7 +35,7 @@ public class EventHand : MonoBehaviour
             currentTouched = null;
         }
         
-        if(input.TriggerUp() && currentGrabbed != null && currentTouched != null)
+        if(input.TriggerUp() && currentGrabbed != null && currentTouched == null)
         {
             foreach (IInteractable i in GetInteractables(currentGrabbed))
             {
@@ -48,7 +48,7 @@ public class EventHand : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if(currentTouched == null)
+        if(currentTouched == null && currentGrabbed == null)
         {
             IInteractable[] interactables = GetInteractables(col.gameObject);
 
@@ -64,7 +64,7 @@ public class EventHand : MonoBehaviour
 
     private void OnTriggerExit(Collider col)
     {
-        if(col.gameObject == currentTouched)
+        if(col.gameObject == currentTouched && col.gameObject != currentGrabbed)
         {
             IInteractable[] interactables = GetInteractables(col.gameObject);
 
