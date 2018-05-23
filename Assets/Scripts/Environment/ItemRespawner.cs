@@ -17,15 +17,15 @@ public class ItemRespawner : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
 
-        Debug.Log("Respawning item: " + other);
+        //Debug.Log("Respawning item: " + other);
 
-        Rigidbody rb = other.GetComponent<Rigidbody>();
-        Interactible i = other.GetComponent<Interactible>();
+        //Rigidbody rb = other.GetComponent<Rigidbody>();
+        ////Interactible i = other.GetComponent<Interactible>();
 
-        if(rb && i)
-        {
-            rb.velocity = Vector3.zero;
-            other.transform.position = i.startPos;
-        }
+        //if(rb && i)
+        //{
+        //    rb.velocity = Vector3.zero;
+        //    other.transform.position = i.startPos;
+        //}
     }
 }
