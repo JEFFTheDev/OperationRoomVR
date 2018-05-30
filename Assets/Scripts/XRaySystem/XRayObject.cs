@@ -51,7 +51,8 @@ public class XRayObject : MonoBehaviour {
         {
             //Create new layer and make it transparent
             GameObject transparentLayer = CreateObjectShaderLayer(this.gameObject, xRayRevealShader);
-            Destroy(transparentLayer.GetComponent<HeadTilt>());
+            //Destroy(transparentLayer.GetComponent<HeadTilt>());
+            //Destroy();
             transparentLayer.transform.position = transform.position;
             transparentLayer.transform.rotation = transform.rotation;
             transparentLayer.name = "TransparentLayer";
@@ -59,7 +60,7 @@ public class XRayObject : MonoBehaviour {
 
             //Create new layer to render this one
             GameObject renderLayer = CreateObjectShaderLayer(this.gameObject, xRayIgnoreRendShader);
-            Destroy(renderLayer.GetComponent<HeadTilt>());
+            //Destroy(renderLayer.GetComponent<HeadTilt>());
             renderLayer.name = "RenderLayer";
             
             Vector3 pos = renderLayer.transform.position;
@@ -104,12 +105,15 @@ public class XRayObject : MonoBehaviour {
     private GameObject CreateObjectShaderLayer(GameObject g, Shader shader)
     {
         GameObject layer = GameObject.Instantiate(g);
-
-        Destroy(layer.GetComponent<XRayObject>());
-
+        
         foreach(MonoBehaviour m in layer.GetComponentsInChildren<MonoBehaviour>())
         {
-            //TODO Remove all monobehaviours that aren't meshfilters or meshrenderers
+            Destroy(m);
+        }
+
+        foreach (MonoBehaviour m in layer.GetComponentsInChildren<MonoBehaviour>())
+        {
+            Destroy(m);
         }
 
         ApplyShader(layer, shader);
