@@ -25,9 +25,12 @@ public class Highlight : MonoBehaviour, IInteractable {
 
     private void HighlightObject(bool hightlight)
     {
-        Material m = GetComponent<MeshRenderer>().material;
-        m.shader = hightlight ? Shader.Find("Outlined/Silhouetted Diffuse") : startShader;
-        isHighlighted = hightlight;
+        foreach(MeshRenderer mr in GetComponentsInChildren<MeshRenderer>())
+        {
+            Material m = mr.material;
+            m.shader = hightlight ? Shader.Find("Outlined/Silhouetted Diffuse") : startShader;
+            isHighlighted = hightlight;
+        }
     }
 
     public void OnGrab(Transform hand)

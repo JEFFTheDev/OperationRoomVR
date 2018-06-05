@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
@@ -33,10 +34,10 @@ public class LaryngoscopeFolding : MonoBehaviour
         }
         else if (other.tag == "Hand" && animator.GetBool("unfold") && GetComponent<Throwable>().attached && animator.GetCurrentAnimatorStateInfo(0).IsName("Unfolded"))
         {
+
             animator.SetBool("unfold", false);
             spotlight.enabled = false;
         }
-
-
     }
 }
+    
