@@ -78,9 +78,7 @@ public class Highlight : MonoBehaviour, IInteractable
                 i++;
                 continue;
             }
-                
-
-
+            
             combine[i].mesh = meshFilters[i].sharedMesh;
             combine[i].transform = meshFilters[i].transform.localToWorldMatrix;
             i++;
