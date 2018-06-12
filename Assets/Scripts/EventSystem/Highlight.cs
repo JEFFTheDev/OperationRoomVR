@@ -3,17 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Highlight : MonoBehaviour, IInteractable {
+public class Highlight : MonoBehaviour, IInteractable
+{
 
     private bool isHighlighted;
     private GameObject combinedObject;
     private Dictionary<Material, Shader> materialLibrary;
+    private Shader highlightShader;
+    private Shader highlightOnlyShader;
+    public GameObject[] ignoreThese;
 
     private void Start()
     {
         materialLibrary = new Dictionary<Material, Shader>();
+        highlightShader = Shader.Find("Outlined/Silhouetted Diffuse");
+        highlightOnlyShader = Shader.Find("Outlined/Silhouette Only");
     }
-    
+
     public void OnTouch(Transform hand)
     {
         Debug.Log("test");
@@ -21,24 +27,41 @@ public class Highlight : MonoBehaviour, IInteractable {
         if (HasMoreMeshes() && combinedObject == null)
             combinedObject = CreateCombinedObject();
 
-        HighlightObject(true, HasMoreMeshes() ? combinedObject : this.gameObject);
+        HighlightObject(true, HasMoreMeshes() ? combinedObject : this.gameObject, HasMoreMeshes() ? highlightOnlyShader : highlightShader);
     }
 
     public void OnTouchStop(Transform hand)
     {
-        HighlightObject(false, HasMoreMeshes() ? combinedObject : this.gameObject);
+        HighlightObject(false, HasMoreMeshes() ? combinedObject : this.gameObject, HasMoreMeshes() ? highlightOnlyShader : highlightShader);
     }
 
-    private void HighlightObject(bool hightlight, GameObject obj)
+    private void HighlightObject(bool hightlight, GameObject obj, Shader s)
     {
         foreach (MeshRenderer mr in obj.GetComponentsInChildren<MeshRenderer>())
         {
             Material m = mr.material;
 
-            if (!materialLibrary.ContainsKey(m))
+            if (!materialLibrary.ContainsKey(m) && m.shader != s)
                 materialLibrary.Add(m, m.shader);
 
-            m.shader = hightlight ? Shader.Find("Outlined/Silhouetted Diffuse") : materialLibrary[m];
+            if (hightlight)
+            {
+                if (HasMoreMeshes())
+                    combinedObject.SetActive(true);
+
+                Color c = m.color;
+                m.shader = s;
+                m.SetColor("_MainColor", c);
+            }
+            else
+            {
+                if (HasMoreMeshes())
+                    combinedObject.SetActive(false);
+
+                m.shader = materialLibrary[m];
+            }
+
+            m.shader = hightlight ? s : materialLibrary[m];
             isHighlighted = hightlight;
         }
     }
@@ -50,6 +73,14 @@ public class Highlight : MonoBehaviour, IInteractable {
         int i = 0;
         while (i < meshFilters.Length)
         {
+            if (IgnoreThis(meshFilters[i].gameObject))
+            {
+                i++;
+                continue;
+            }
+                
+
+
             combine[i].mesh = meshFilters[i].sharedMesh;
             combine[i].transform = meshFilters[i].transform.localToWorldMatrix;
             i++;
@@ -66,10 +97,9 @@ public class Highlight : MonoBehaviour, IInteractable {
         GameObject g = new GameObject("Highlight object: " + this.gameObject.name);
         g.AddComponent<MeshFilter>().mesh = GetCombinedMesh();
         g.AddComponent<MeshRenderer>();
-        g.transform.localScale = transform.localScale;
-        g.transform.rotation = transform.rotation;
-        g.transform.position = transform.position;
+        //g.transform.rotation = transform.rotation;
         g.transform.SetParent(this.transform);
+        //g.transform.position = transform.position;
         return g;
     }
 
@@ -77,6 +107,17 @@ public class Highlight : MonoBehaviour, IInteractable {
     {
         Debug.Log("Mesh count: " + GetComponentsInChildren<MeshRenderer>().Length);
         return GetComponentsInChildren<MeshRenderer>().Length > 1;
+    }
+
+    private bool IgnoreThis(GameObject obj)
+    {
+        foreach(GameObject g in ignoreThese)
+        {
+            if (obj == g)
+                return true;
+        }
+
+        return false;
     }
 
     public void OnGrab(Transform hand)
@@ -88,5 +129,4 @@ public class Highlight : MonoBehaviour, IInteractable {
     {
         //No implementation needed
     }
-
 }
