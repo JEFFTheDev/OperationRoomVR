@@ -2,19 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 using Valve.VR.InteractionSystem;
 
 public class ViveControllerInput : MonoBehaviour, IInput {
 
-    public SteamVR_TrackedController controller;
-    private bool triggerDown;
-    private bool triggerUp;
+    public Hand hand;
 
     // Use this for initialization
     void Start()
     {
-        controller.TriggerClicked += delegate { triggerDown = true; triggerUp = false; };
-        controller.TriggerUnclicked += delegate { triggerDown = false; triggerUp = true; };
+        
     }
 
     // Update is called once per frame
@@ -23,18 +21,19 @@ public class ViveControllerInput : MonoBehaviour, IInput {
 
     }
 
-    private void say(object sender, ClickedEventArgs e)
-    {
-        Debug.Log("down or up");
-    }
-
     public bool TriggerDown()
     {
-        return triggerDown;
+        if (hand.controller != null)
+            return hand.controller.GetPressDown(SteamVR_Controller.ButtonMask.Trigger);
+
+        return false;
     }
 
     public bool TriggerUp()
     {
-        return triggerUp;
+        if (hand.controller != null)
+            return hand.controller.GetPressUp(SteamVR_Controller.ButtonMask.Trigger);
+
+        return false;
     }
 }
