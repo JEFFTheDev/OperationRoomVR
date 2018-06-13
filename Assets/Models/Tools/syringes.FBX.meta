@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 155006a58e4c83b43bac4bb5c8f1b130
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box001
+    100002: color
+    100004: color001
+    100006: color002
+    100008: color003
+    100010: color004
+    100012: drug
+    100014: drug006
+    100016: drug007
+    100018: drug008
+    100020: drug009
+    100022: syringe
+    100024: syringe012
+    100026: syringe013
+    100028: syringe014
+    100030: syringe015
+    100032: syringe1
+    100034: syringe2
+    100036: syringe3
+    100038: syringe4
+    100040: syringe5
+    100042: //RootNode
+    400000: Box001
+    400002: color
+    400004: color001
+    400006: color002
+    400008: color003
+    400010: color004
+    400012: drug
+    400014: drug006
+    400016: drug007
+    400018: drug008
+    400020: drug009
+    400022: syringe
+    400024: syringe012
+    400026: syringe013
+    400028: syringe014
+    400030: syringe015
+    400032: syringe1
+    400034: syringe2
+    400036: syringe3
+    400038: syringe4
+    400040: syringe5
+    400042: //RootNode
+    2100000: No Name
+    2100002: syringeMtl2
+    2100004: syringeMtl4
+    2100006: syringeMtl5
+    2100008: syringeMtl6
+    2100010: syringeMtl7
+    2100012: syringeMtl8
+    2100014: syringeMtl3
+    2100016: syringeMtl1
+    2300000: Box001
+    2300002: color
+    2300004: color001
+    2300006: color002
+    2300008: color003
+    2300010: color004
+    2300012: drug
+    2300014: drug006
+    2300016: drug007
+    2300018: drug008
+    2300020: drug009
+    2300022: syringe
+    2300024: syringe012
+    2300026: syringe013
+    2300028: syringe014
+    2300030: syringe015
+    3300000: Box001
+    3300002: color
+    3300004: color001
+    3300006: color002
+    3300008: color003
+    3300010: color004
+    3300012: drug
+    3300014: drug006
+    3300016: drug007
+    3300018: drug008
+    3300020: drug009
+    3300022: syringe
+    3300024: syringe012
+    3300026: syringe013
+    3300028: syringe014
+    3300030: syringe015
+    4300000: Box001
+    4300002: syringe
+    4300004: drug
+    4300006: color
+    4300008: color001
+    4300010: drug006
+    4300012: syringe012
+    4300014: color002
+    4300016: drug007
+    4300018: syringe013
+    4300020: color003
+    4300022: drug008
+    4300024: syringe014
+    4300026: color004
+    4300028: drug009
+    4300030: syringe015
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
