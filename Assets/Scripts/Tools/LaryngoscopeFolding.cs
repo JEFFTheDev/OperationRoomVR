@@ -25,14 +25,14 @@ public class LaryngoscopeFolding : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.tag == "Hand" && !animator.GetBool("unfold") && GetComponent<Throwable>().attached && animator.GetCurrentAnimatorStateInfo(0).IsName("Folded"))
+        if (other.tag == "Hand" && !animator.GetBool("unfold") && GetComponent<Grab>().isGrabbed && animator.GetCurrentAnimatorStateInfo(0).IsName("Folded"))
         {
             animator.SetBool("unfold", true);
             spotlight.enabled = true;
 
 
         }
-        else if (other.tag == "Hand" && animator.GetBool("unfold") && GetComponent<Throwable>().attached && animator.GetCurrentAnimatorStateInfo(0).IsName("Unfolded"))
+        else if (other.tag == "Hand" && animator.GetBool("unfold") && GetComponent<Grab>().isGrabbed && animator.GetCurrentAnimatorStateInfo(0).IsName("Unfolded"))
         {
 
             animator.SetBool("unfold", false);

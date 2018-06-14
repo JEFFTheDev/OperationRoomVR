@@ -12,8 +12,8 @@ public class HeadTilt : MonoBehaviour
     Animator animator;
     public Transform lookObj = null;
     private List<Animator> layers;
-    Animator trans;
-    Animator rend;
+    //Animator trans;
+    //Animator rend;
 
     void Start()
     {
@@ -23,20 +23,23 @@ public class HeadTilt : MonoBehaviour
     }
     private void Update()
     {
-        trans = GameObject.Find("TransparentLayer").GetComponent<Animator>();
-        rend = GameObject.Find("RenderLayer").GetComponent<Animator>();
+        //trans = GameObject.Find("TransparentLayer").GetComponent<Animator>();
+        //rend = GameObject.Find("RenderLayer").GetComponent<Animator>();
     }
     //a callback for calculating IK
     void OnAnimatorIK()
     {
 
-        animator.SetLookAtWeight(1);
-        animator.SetLookAtPosition(lookObj.position);
+        animator.SetIKPositionWeight(AvatarIKGoal.RightFoot, 1);
+        animator.SetIKRotationWeight(AvatarIKGoal.RightFoot, 1);
+        animator.SetIKPosition(AvatarIKGoal.RightFoot, lookObj.position);
+        animator.SetIKRotation(AvatarIKGoal.RightFoot, lookObj.rotation);
+        //animator.SetLookAtPosition(lookObj.position);
 
-        trans.SetLookAtWeight(1);
-        trans.SetLookAtPosition(lookObj.position);
+        //trans.SetLookAtWeight(1);
+        //trans.SetLookAtPosition(lookObj.position);
 
-        rend.SetLookAtWeight(1);
-        rend.SetLookAtPosition(lookObj.position);
+        //rend.SetLookAtWeight(1);
+        //rend.SetLookAtPosition(lookObj.position);
     }
 }
