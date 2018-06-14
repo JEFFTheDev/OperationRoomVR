@@ -10,7 +10,7 @@ public class Grab : MonoBehaviour, IInteractable
     private Rigidbody rb;
     public bool isGrabbed;
 
-    private void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
@@ -21,9 +21,8 @@ public class Grab : MonoBehaviour, IInteractable
 
     }
   
-    private void AttachTo(Transform to)
+    public void AttachTo(Transform to)
     {
-        Debug.Log("grabbed: " + gameObject.name);
         parentBeforeAttach = transform.parent;
         transform.SetParent(to);
         rb.useGravity = false;
@@ -33,9 +32,6 @@ public class Grab : MonoBehaviour, IInteractable
 
     public void Detach()
     {
-        Debug.Log("stopped grab: " + gameObject.name);
-
-        //Maybe return to old parent?
         transform.SetParent(null);
         rb.useGravity = true;
         rb.isKinematic = false;

@@ -22,8 +22,6 @@ public class Highlight : MonoBehaviour, IInteractable
 
     public void OnTouch(Transform hand)
     {
-        Debug.Log("test");
-
         if (HasMoreMeshes() && combinedObject == null)
             combinedObject = CreateCombinedObject();
 
@@ -103,7 +101,6 @@ public class Highlight : MonoBehaviour, IInteractable
 
     private bool HasMoreMeshes()
     {
-        Debug.Log("Mesh count: " + GetComponentsInChildren<MeshRenderer>().Length);
         return GetComponentsInChildren<MeshRenderer>().Length > 1;
     }
 

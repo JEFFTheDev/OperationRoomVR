@@ -93,4 +93,9 @@ public class EventHand : MonoBehaviour
 
         return interactables.ToArray();
     }
+
+    public void AttachManually(GameObject attach)
+    {
+        currentGrabbed = attach;
+    }
 }

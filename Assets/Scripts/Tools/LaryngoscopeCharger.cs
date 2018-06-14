@@ -5,6 +5,9 @@ using UnityEngine;
 public class LaryngoscopeCharger : MonoBehaviour {
 
     public GameObject accept;
+    public Material charged;
+    public Material neutral;
+    public MeshRenderer circle;
     private GameObject currentObj;
     private Vector3 chargerPos;
     private Quaternion chargerRot;
@@ -21,9 +24,13 @@ public class LaryngoscopeCharger : MonoBehaviour {
         if (currentObj && !grabFromOther.isGrabbed)
             currentObj.transform.SetPositionAndRotation(chargerPos, chargerRot);
 
-        if (grabFromOther.isGrabbed)
+        if (grabFromOther)
         {
-            currentObj = null;
+            if (grabFromOther.isGrabbed)
+            {
+
+                currentObj = null;
+            }
         }
 	}
 
@@ -31,9 +38,20 @@ public class LaryngoscopeCharger : MonoBehaviour {
     {
         if(other.gameObject == accept)
         {
+            currentObj = other.gameObject;
+            circle.material = charged;
+            Debug.Log("Log sth");
             grabFromOther = other.GetComponent<Grab>();
             grabFromOther.Detach();
             currentObj.transform.SetPositionAndRotation(chargerPos, chargerRot);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject == accept)
+        {
+            circle.material = neutral;
         }
     }
 }
