@@ -101,6 +101,26 @@ public class Highlight : MonoBehaviour, IInteractable
 
     private bool HasMoreMeshes()
     {
+
+        int meshCount = 0;
+
+        foreach (MeshRenderer mr in GetComponentsInChildren<MeshRenderer>())
+        {
+
+            meshCount++;
+
+            foreach(GameObject g in ignoreThese)
+            {
+                MeshRenderer gMr = g.GetComponent<MeshRenderer>();
+
+                if (gMr & gMr == mr)
+                {
+                    meshCount--;
+                }
+            }
+            
+        }
+
         return GetComponentsInChildren<MeshRenderer>().Length > 1;
     }
 

@@ -40,6 +40,7 @@ public class EventHand : MonoBehaviour
             foreach (IInteractable i in GetInteractables(currentGrabbed))
             {
                 i.OnRelease(transform);
+                StartCoroutine(RetryCollision());
             }
 
             currentGrabbed = null;
@@ -92,6 +93,13 @@ public class EventHand : MonoBehaviour
         }
 
         return interactables.ToArray();
+    }
+
+    IEnumerator RetryCollision()
+    {
+        GetComponent<BoxCollider>().enabled = false;
+        yield return new WaitForSeconds(.05f);
+        GetComponent<BoxCollider>().enabled = true;
     }
 
     public void AttachManually(GameObject attach)
