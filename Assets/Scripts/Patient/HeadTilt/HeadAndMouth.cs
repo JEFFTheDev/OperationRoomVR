@@ -9,6 +9,9 @@ public class HeadAndMouth : MonoBehaviour {
     public GameObject jawGrab;
     public GameObject jaw;
     int jawAux = 0;
+    public bool headTilted = false;
+    public bool jawTilted = false;
+    public static bool moveable = false;
 
     // Use this for initialization
     void Start () {
@@ -17,18 +20,24 @@ public class HeadAndMouth : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(headGrab.GetComponent<Grab>().isGrabbed && headAux < 45)
+		if(headGrab.GetComponent<Grab>().isGrabbed && headAux < 50 && moveable)
         {
             Vector3 headRotation = new Vector3(0, 1, 0);
             head.transform.Rotate(headRotation);
             headAux++;
         }
 
-        if (jawGrab.GetComponent<Grab>().isGrabbed && jawAux < 18)
+        if (headAux >= 50)
+            headTilted = true;
+
+        if (jawGrab.GetComponent<Grab>().isGrabbed && jawAux < 30 && headTilted)
         {
             Vector3 jawRotation = new Vector3(0, -1, 0);
             jaw.transform.Rotate(jawRotation);
             jawAux++;
         }
+
+        if (jawAux >= 30)
+            jawTilted = true;
     }
 }

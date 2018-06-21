@@ -97,9 +97,9 @@ public class EventHand : MonoBehaviour
 
     IEnumerator RetryCollision()
     {
-        GetComponent<BoxCollider>().enabled = false;
+        GetComponent<MeshCollider>().enabled = false;
         yield return new WaitForSeconds(.05f);
-        GetComponent<BoxCollider>().enabled = true;
+        GetComponent<MeshCollider>().enabled = true;
     }
 
     public void AttachManually(GameObject attach)

@@ -1,0 +1,315 @@
+fileFormatVersion: 2
+guid: eedf3298b118c9142bc735ed8ea4e0e8
+timeCreated: 1529322322
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bone
+    100004: Bone.001
+    100006: Bone.002
+    100008: Bone.003
+    100010: Bone.004
+    100012: Bone.005
+    100014: Bone.006
+    100016: Bone.007
+    100018: Bone.008
+    100020: Bone.009
+    100022: Bone.010
+    100024: Bone.011
+    100026: Bone.012
+    100028: Bone.013
+    100030: Bone.014
+    100032: Bone.015
+    100034: Bone.016
+    100036: Bone.017
+    100038: Bone.018
+    100040: Bone.019
+    100042: Bone.020
+    100044: Bone.021
+    100046: Bone.022
+    100048: Bone.023
+    100050: Bone.024
+    100052: Bone.025
+    100054: Bone.025_end
+    100056: Capsule001
+    100058: InjectorBody
+    100060: InjectorHead
+    100062: Text002
+    100064: Text003
+    100066: Text004
+    100068: Text005
+    100070: Text006
+    100072: TubeBody
+    100074: TubeBody001
+    100076: TubeCap
+    100078: //RootNode
+    400000: Armature
+    400002: Bone
+    400004: Bone.001
+    400006: Bone.002
+    400008: Bone.003
+    400010: Bone.004
+    400012: Bone.005
+    400014: Bone.006
+    400016: Bone.007
+    400018: Bone.008
+    400020: Bone.009
+    400022: Bone.010
+    400024: Bone.011
+    400026: Bone.012
+    400028: Bone.013
+    400030: Bone.014
+    400032: Bone.015
+    400034: Bone.016
+    400036: Bone.017
+    400038: Bone.018
+    400040: Bone.019
+    400042: Bone.020
+    400044: Bone.021
+    400046: Bone.022
+    400048: Bone.023
+    400050: Bone.024
+    400052: Bone.025
+    400054: Bone.025_end
+    400056: Capsule001
+    400058: InjectorBody
+    400060: InjectorHead
+    400062: Text002
+    400064: Text003
+    400066: Text004
+    400068: Text005
+    400070: Text006
+    400072: TubeBody
+    400074: TubeBody001
+    400076: TubeCap
+    400078: //RootNode
+    2100000: 02 - Default
+    2100002: No Name
+    2100004: 03 - Default
+    2100006: 07 - Default
+    2300000: Capsule001
+    2300002: InjectorBody
+    2300004: InjectorHead
+    2300006: Text002
+    2300008: Text003
+    2300010: Text004
+    2300012: Text005
+    2300014: Text006
+    2300016: TubeBody001
+    2300018: TubeCap
+    3300000: Capsule001
+    3300002: InjectorBody
+    3300004: InjectorHead
+    3300006: Text002
+    3300008: Text003
+    3300010: Text004
+    3300012: Text005
+    3300014: Text006
+    3300016: TubeBody001
+    3300018: TubeCap
+    4300000: TubeBody
+    4300002: TubeBody001
+    4300004: Capsule001
+    4300006: InjectorHead
+    4300008: InjectorBody
+    4300010: Text006
+    4300012: Text005
+    4300014: Text004
+    4300016: Text003
+    4300018: Text002
+    4300020: TubeCap
+    7400000: TubeBody001|Capsule001|Take 001|BaseLayer
+    7400002: TubeBody001|InjectorBody|Take 001|BaseLayer
+    7400004: TubeBody001|InjectorHead|Take 001|BaseLayer
+    7400006: TubeBody001|Text002|Take 001|BaseLayer
+    7400008: TubeBody001|Text003|Take 001|BaseLayer
+    7400010: TubeBody001|Text004|Take 001|BaseLayer
+    7400012: TubeBody001|Text005|Take 001|BaseLayer
+    7400014: TubeBody001|Text006|Take 001|BaseLayer
+    7400016: TubeBody001|TubeBody001|Take 001|BaseLayer
+    7400018: TubeBody001|TubeBody|Take 001|BaseLayer
+    7400020: TubeBody001|TubeCap|Take 001|BaseLayer
+    7400022: Capsule001|Capsule001|Take 001|BaseLayer
+    7400024: Capsule001|InjectorBody|Take 001|BaseLayer
+    7400026: Capsule001|InjectorHead|Take 001|BaseLayer
+    7400028: Capsule001|Text002|Take 001|BaseLayer
+    7400030: Capsule001|Text003|Take 001|BaseLayer
+    7400032: Capsule001|Text004|Take 001|BaseLayer
+    7400034: Capsule001|Text005|Take 001|BaseLayer
+    7400036: Capsule001|Text006|Take 001|BaseLayer
+    7400038: Capsule001|TubeBody001|Take 001|BaseLayer
+    7400040: Capsule001|TubeBody|Take 001|BaseLayer
+    7400042: Capsule001|TubeCap|Take 001|BaseLayer
+    7400044: InjectorHead|Capsule001|Take 001|BaseLayer
+    7400046: InjectorHead|InjectorBody|Take 001|BaseLayer
+    7400048: InjectorHead|InjectorHead|Take 001|BaseLayer
+    7400050: InjectorHead|Text002|Take 001|BaseLayer
+    7400052: InjectorHead|Text003|Take 001|BaseLayer
+    7400054: InjectorHead|Text004|Take 001|BaseLayer
+    7400056: InjectorHead|Text005|Take 001|BaseLayer
+    7400058: InjectorHead|Text006|Take 001|BaseLayer
+    7400060: InjectorHead|TubeBody001|Take 001|BaseLayer
+    7400062: InjectorHead|TubeBody|Take 001|BaseLayer
+    7400064: InjectorHead|TubeCap|Take 001|BaseLayer
+    7400066: InjectorBody|Capsule001|Take 001|BaseLayer
+    7400068: InjectorBody|InjectorBody|Take 001|BaseLayer
+    7400070: InjectorBody|InjectorHead|Take 001|BaseLayer
+    7400072: InjectorBody|Text002|Take 001|BaseLayer
+    7400074: InjectorBody|Text003|Take 001|BaseLayer
+    7400076: InjectorBody|Text004|Take 001|BaseLayer
+    7400078: InjectorBody|Text005|Take 001|BaseLayer
+    7400080: InjectorBody|Text006|Take 001|BaseLayer
+    7400082: InjectorBody|TubeBody001|Take 001|BaseLayer
+    7400084: InjectorBody|TubeBody|Take 001|BaseLayer
+    7400086: InjectorBody|TubeCap|Take 001|BaseLayer
+    7400088: Text006|Capsule001|Take 001|BaseLayer
+    7400090: Text006|InjectorBody|Take 001|BaseLayer
+    7400092: Text006|InjectorHead|Take 001|BaseLayer
+    7400094: Text006|Text002|Take 001|BaseLayer
+    7400096: Text006|Text003|Take 001|BaseLayer
+    7400098: Text006|Text004|Take 001|BaseLayer
+    7400100: Text006|Text005|Take 001|BaseLayer
+    7400102: Text006|Text006|Take 001|BaseLayer
+    7400104: Text006|TubeBody001|Take 001|BaseLayer
+    7400106: Text006|TubeBody|Take 001|BaseLayer
+    7400108: Text006|TubeCap|Take 001|BaseLayer
+    7400110: Text005|Capsule001|Take 001|BaseLayer
+    7400112: Text005|InjectorBody|Take 001|BaseLayer
+    7400114: Text005|InjectorHead|Take 001|BaseLayer
+    7400116: Text005|Text002|Take 001|BaseLayer
+    7400118: Text005|Text003|Take 001|BaseLayer
+    7400120: Text005|Text004|Take 001|BaseLayer
+    7400122: Text005|Text005|Take 001|BaseLayer
+    7400124: Text005|Text006|Take 001|BaseLayer
+    7400126: Text005|TubeBody001|Take 001|BaseLayer
+    7400128: Text005|TubeBody|Take 001|BaseLayer
+    7400130: Text005|TubeCap|Take 001|BaseLayer
+    7400132: Text004|Capsule001|Take 001|BaseLayer
+    7400134: Text004|InjectorBody|Take 001|BaseLayer
+    7400136: Text004|InjectorHead|Take 001|BaseLayer
+    7400138: Text004|Text002|Take 001|BaseLayer
+    7400140: Text004|Text003|Take 001|BaseLayer
+    7400142: Text004|Text004|Take 001|BaseLayer
+    7400144: Text004|Text005|Take 001|BaseLayer
+    7400146: Text004|Text006|Take 001|BaseLayer
+    7400148: Text004|TubeBody001|Take 001|BaseLayer
+    7400150: Text004|TubeBody|Take 001|BaseLayer
+    7400152: Text004|TubeCap|Take 001|BaseLayer
+    7400154: Text003|Capsule001|Take 001|BaseLayer
+    7400156: Text003|InjectorBody|Take 001|BaseLayer
+    7400158: Text003|InjectorHead|Take 001|BaseLayer
+    7400160: Text003|Text002|Take 001|BaseLayer
+    7400162: Text003|Text003|Take 001|BaseLayer
+    7400164: Text003|Text004|Take 001|BaseLayer
+    7400166: Text003|Text005|Take 001|BaseLayer
+    7400168: Text003|Text006|Take 001|BaseLayer
+    7400170: Text003|TubeBody001|Take 001|BaseLayer
+    7400172: Text003|TubeBody|Take 001|BaseLayer
+    7400174: Text003|TubeCap|Take 001|BaseLayer
+    7400176: Text002|Capsule001|Take 001|BaseLayer
+    7400178: Text002|InjectorBody|Take 001|BaseLayer
+    7400180: Text002|InjectorHead|Take 001|BaseLayer
+    7400182: Text002|Text002|Take 001|BaseLayer
+    7400184: Text002|Text003|Take 001|BaseLayer
+    7400186: Text002|Text004|Take 001|BaseLayer
+    7400188: Text002|Text005|Take 001|BaseLayer
+    7400190: Text002|Text006|Take 001|BaseLayer
+    7400192: Text002|TubeBody001|Take 001|BaseLayer
+    7400194: Text002|TubeBody|Take 001|BaseLayer
+    7400196: Text002|TubeCap|Take 001|BaseLayer
+    7400198: TubeCap|Capsule001|Take 001|BaseLayer
+    7400200: TubeCap|InjectorBody|Take 001|BaseLayer
+    7400202: TubeCap|InjectorHead|Take 001|BaseLayer
+    7400204: TubeCap|Text002|Take 001|BaseLayer
+    7400206: TubeCap|Text003|Take 001|BaseLayer
+    7400208: TubeCap|Text004|Take 001|BaseLayer
+    7400210: TubeCap|Text005|Take 001|BaseLayer
+    7400212: TubeCap|Text006|Take 001|BaseLayer
+    7400214: TubeCap|TubeBody001|Take 001|BaseLayer
+    7400216: TubeCap|TubeBody|Take 001|BaseLayer
+    7400218: TubeCap|TubeCap|Take 001|BaseLayer
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: TubeBody
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

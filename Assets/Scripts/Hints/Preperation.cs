@@ -14,7 +14,7 @@ public class Preperation : MonoBehaviour
     {
         get
         {
-            return ObjectSlot.preperationCount >= 5;
+            return Preperation.preperationCount >= 6;
         }
 
         private set
@@ -23,14 +23,26 @@ public class Preperation : MonoBehaviour
         }
     }
     public GameObject accept;
+    public AudioClip impact;
+    public bool stayLocked;
     private Vector3 lockPos;
     private Quaternion lockRot;
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = impact;
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 1.0f;
+        
+
+    }
 
     private void Update()
     {
-        if (ObjectSlot.IsDonePreparing && isInPlace)
+        if (Preperation.IsDonePreparing && isInPlace && !stayLocked && !audioSource.isPlaying)
         {
-            Debug.Log("Done preparing! Items can be picked up again!");
             Grab g = other.GetComponent<Grab>();
             g.Freeze(false);
             Destroy(this.gameObject);
@@ -47,34 +59,40 @@ public class Preperation : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (accept == other.gameObject || other.gameObject.name.Substring(0, 5) == accept.name.Substring(0, 5))
+        if (accept)
         {
-            this.other = other.gameObject;
-
-            other.transform.rotation = this.transform.rotation;
-            other.transform.position = this.transform.position;
-            Grab g = other.GetComponent<Grab>();
-            g.Detach();
-            g.Freeze(true);
-
-
-            if (nextItems.Length > 0)
+            if (accept == other.gameObject || other.gameObject.name.Substring(0, 5) == accept.name.Substring(0, 5))
             {
-                foreach (GameObject next in nextItems)
+                this.other = other.gameObject;
+
+                other.transform.rotation = this.transform.rotation;
+                other.transform.position = this.transform.position;
+                Grab g = other.GetComponent<Grab>();
+                g.Detach();
+                g.Freeze(true);
+
+
+                if (nextItems.Length > 0)
                 {
-                    next.SetActive(true);
+                    foreach (GameObject next in nextItems)
+                    {
+                        next.SetActive(true);
+                    }
                 }
+
+
+                isInPlace = true;
+
+                audioSource.PlayOneShot(impact, 0.5F);
+
+
+                Preperation.preperationCount++;
+
+                lockPos = transform.position;
+                lockRot = transform.rotation;
+                Debug.Log("Lock pos: " + lockPos);
+                DisableAllRenderers();
             }
-
-
-            isInPlace = true;
-
-            ObjectSlot.preperationCount++;
-
-            lockPos = transform.position;
-            lockRot = transform.rotation;
-            Debug.Log("Lock pos: " + lockPos);
-            DisableAllRenderers();
         }
     }
 

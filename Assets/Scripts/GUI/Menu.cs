@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class Menu : MonoBehaviour {
     public GameObject arrow;
     public GameObject menu;
     private float menuWidth;
+    public Text errorDisplay;
 
 	// Use this for initialization
 	void Start ()
@@ -24,6 +26,8 @@ public class Menu : MonoBehaviour {
 	void Update ()
     {
         menu.transform.localPosition = Vector2.MoveTowards(menu.transform.localPosition, isCollapsed ? new Vector2(startPos.x - menuWidth, startPos.y) : startPos, animateSpeed *Time.deltaTime);
+
+        errorDisplay.text = ErrorRegistry.GetErrorString();
 	}
 
     public void LoadScene()

@@ -338,6 +338,7 @@ public class SteamVR_RenderModel : MonoBehaviour
 		var vertices = new Vector3[renderModel.unVertexCount];
 		var normals = new Vector3[renderModel.unVertexCount];
 		var uv = new Vector2[renderModel.unVertexCount];
+        
 
 		var type = typeof(RenderModel_Vertex_t);
 		for (int iVert = 0; iVert < renderModel.unVertexCount; iVert++)

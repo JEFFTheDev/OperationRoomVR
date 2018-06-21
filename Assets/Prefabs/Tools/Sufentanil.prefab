@@ -37,9 +37,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4589986992674222}
   - component: {fileID: 54200159097930722}
-  - component: {fileID: 136609196423304054}
   - component: {fileID: 114000708217328222}
   - component: {fileID: 114465683909483570}
+  - component: {fileID: 65652979918951234}
   m_Layer: 0
   m_Name: Sufentanil
   m_TagString: Syringe
@@ -114,7 +114,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1481858699645712}
   m_LocalRotation: {x: 0.42305267, y: 0.566592, z: 0.566592, w: -0.42305264}
-  m_LocalPosition: {x: -0.306, y: -0.661, z: -0.466}
+  m_LocalPosition: {x: -4.421273, y: 1.007987, z: -1.2787057}
   m_LocalScale: {x: 0.8837826, y: 0.8837833, z: 0.8837826}
   m_Children:
   - {fileID: 4802469952964272}
@@ -279,6 +279,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65652979918951234
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481858699645712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08996814, y: 0.019349514, z: 0.015210887}
+  m_Center: {x: -0.021093508, y: 0.012972364, z: 0.002096857}
 --- !u!114 &114000708217328222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -303,16 +315,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreThese: []
---- !u!136 &136609196423304054
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1481858699645712}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.008
-  m_Height: 0.1
-  m_Direction: 0
-  m_Center: {x: -0.019, y: 0, z: 0}

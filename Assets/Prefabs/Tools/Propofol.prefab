@@ -37,9 +37,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4283560605032246}
   - component: {fileID: 54028821536458058}
-  - component: {fileID: 136456413394280706}
   - component: {fileID: 114613570722983806}
   - component: {fileID: 114296363832098614}
+  - component: {fileID: 65659537294770362}
   m_Layer: 0
   m_Name: Propofol
   m_TagString: Syringe
@@ -128,7 +128,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1921315612745632}
   m_LocalRotation: {x: 0.45150846, y: 0.54418755, z: 0.5441876, w: -0.4515084}
-  m_LocalPosition: {x: -0.25615382, y: -0.646, z: -0.39965135}
+  m_LocalPosition: {x: -4.39547, y: 1.007987, z: -1.3160012}
   m_LocalScale: {x: 1.5507256, y: 1.5507239, z: 1.5507232}
   m_Children:
   - {fileID: 4189601991716418}
@@ -280,6 +280,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65659537294770362
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1921315612745632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.10383755, y: 0.024999999, z: 0.025}
+  m_Center: {x: -0.019663505, y: 1.344244e-10, z: -2.3596862e-17}
 --- !u!114 &114296363832098614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -316,16 +328,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
---- !u!136 &136456413394280706
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1921315612745632}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.01
-  m_Height: 0.1
-  m_Direction: 0
-  m_Center: {x: -0.019, y: 0, z: 0}

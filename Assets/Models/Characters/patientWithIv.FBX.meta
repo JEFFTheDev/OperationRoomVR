@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: bd1380148e0b12340be69249f2d20c2e
+timeCreated: 1529322874
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BrowInnerL
+    100002: BrowInnerR
+    100004: BrowOuterL
+    100006: BrowOuterR
+    100008: CheekL
+    100010: CheekR
+    100012: Clinton IV Stand 5 leg PORTABLE [188307]
+    100014: Cylinder001
+    100016: Cylinder002
+    100018: Cylinder003
+    100020: H_DDS_HighRes
+    100022: h_L_eye
+    100024: h_L_gland
+    100026: h_L_trans
+    100028: h_R_eye
+    100030: h_R_gland
+    100032: h_R_trans
+    100034: h_TeethDown
+    100036: h_TeethUp
+    100038: Head
+    100040: HeadEnd
+    100042: Hips
+    100044: InjectorBody
+    100046: InjectorHead
+    100048: IV
+    100050: Jaw
+    100052: LeftArm
+    100054: LeftEye
+    100056: LeftFingerBase
+    100058: LeftFoot
+    100060: LeftForeArm
+    100062: LeftHand
+    100064: LeftHandIndex1
+    100066: LeftHandIndex2
+    100068: LeftHandIndex3
+    100070: LeftHandIndex4
+    100072: LeftHandMiddle1
+    100074: LeftHandMiddle2
+    100076: LeftHandMiddle3
+    100078: LeftHandMiddle4
+    100080: LeftHandPinky1
+    100082: LeftHandPinky2
+    100084: LeftHandPinky3
+    100086: LeftHandPinky4
+    100088: LeftHandRing1
+    100090: LeftHandRing2
+    100092: LeftHandRing3
+    100094: LeftHandRing4
+    100096: LeftHandThumb1
+    100098: LeftHandThumb2
+    100100: LeftHandThumb3
+    100102: LeftHandThumb4
+    100104: LeftLeg
+    100106: LeftShoulder
+    100108: LeftToeBase
+    100110: LeftToeEnd
+    100112: LeftUpLeg
+    100114: LipCornerL
+    100116: LipCornerR
+    100118: LipLowerL
+    100120: LipLowerR
+    100122: LipUpperL
+    100124: LipUpperR
+    100126: LowerLidL
+    100128: LowerLidR
+    100130: master
+    100132: Neck
+    100134: Nostrils
+    100136: patient
+    100138: //RootNode
+    100140: Reference
+    100142: RightArm
+    100144: RightEye
+    100146: RightFingerBase
+    100148: RightFoot
+    100150: RightForeArm
+    100152: RightHand
+    100154: RightHandIndex1
+    100156: RightHandIndex2
+    100158: RightHandIndex3
+    100160: RightHandIndex4
+    100162: RightHandMiddle1
+    100164: RightHandMiddle2
+    100166: RightHandMiddle3
+    100168: RightHandMiddle4
+    100170: RightHandPinky1
+    100172: RightHandPinky2
+    100174: RightHandPinky3
+    100176: RightHandPinky4
+    100178: RightHandRing1
+    100180: RightHandRing2
+    100182: RightHandRing3
+    100184: RightHandRing4
+    100186: RightHandThumb1
+    100188: RightHandThumb2
+    100190: RightHandThumb3
+    100192: RightHandThumb4
+    100194: RightLeg
+    100196: RightShoulder
+    100198: RightToeBase
+    100200: RightToeEnd
+    100202: RightUpLeg
+    100204: Spine
+    100206: Spine1
+    100208: Spine2
+    100210: TongueF
+    100212: TongueR
+    100214: TubeBody001
+    100216: UMF SS8350 Bucket 13qt UMF SS8350 Bucket 13qt [183708]
+    100218: UpperLidL
+    100220: UpperLidR
+    400000: BrowInnerL
+    400002: BrowInnerR
+    400004: BrowOuterL
+    400006: BrowOuterR
+    400008: CheekL
+    400010: CheekR
+    400012: Clinton IV Stand 5 leg PORTABLE [188307]
+    400014: Cylinder001
+    400016: Cylinder002
+    400018: Cylinder003
+    400020: H_DDS_HighRes
+    400022: h_L_eye
+    400024: h_L_gland
+    400026: h_L_trans
+    400028: h_R_eye
+    400030: h_R_gland
+    400032: h_R_trans
+    400034: h_TeethDown
+    400036: h_TeethUp
+    400038: Head
+    400040: HeadEnd
+    400042: Hips
+    400044: InjectorBody
+    400046: InjectorHead
+    400048: IV
+    400050: Jaw
+    400052: LeftArm
+    400054: LeftEye
+    400056: LeftFingerBase
+    400058: LeftFoot
+    400060: LeftForeArm
+    400062: LeftHand
+    400064: LeftHandIndex1
+    400066: LeftHandIndex2
+    400068: LeftHandIndex3
+    400070: LeftHandIndex4
+    400072: LeftHandMiddle1
+    400074: LeftHandMiddle2
+    400076: LeftHandMiddle3
+    400078: LeftHandMiddle4
+    400080: LeftHandPinky1
+    400082: LeftHandPinky2
+    400084: LeftHandPinky3
+    400086: LeftHandPinky4
+    400088: LeftHandRing1
+    400090: LeftHandRing2
+    400092: LeftHandRing3
+    400094: LeftHandRing4
+    400096: LeftHandThumb1
+    400098: LeftHandThumb2
+    400100: LeftHandThumb3
+    400102: LeftHandThumb4
+    400104: LeftLeg
+    400106: LeftShoulder
+    400108: LeftToeBase
+    400110: LeftToeEnd
+    400112: LeftUpLeg
+    400114: LipCornerL
+    400116: LipCornerR
+    400118: LipLowerL
+    400120: LipLowerR
+    400122: LipUpperL
+    400124: LipUpperR
+    400126: LowerLidL
+    400128: LowerLidR
+    400130: master
+    400132: Neck
+    400134: Nostrils
+    400136: patient
+    400138: //RootNode
+    400140: Reference
+    400142: RightArm
+    400144: RightEye
+    400146: RightFingerBase
+    400148: RightFoot
+    400150: RightForeArm
+    400152: RightHand
+    400154: RightHandIndex1
+    400156: RightHandIndex2
+    400158: RightHandIndex3
+    400160: RightHandIndex4
+    400162: RightHandMiddle1
+    400164: RightHandMiddle2
+    400166: RightHandMiddle3
+    400168: RightHandMiddle4
+    400170: RightHandPinky1
+    400172: RightHandPinky2
+    400174: RightHandPinky3
+    400176: RightHandPinky4
+    400178: RightHandRing1
+    400180: RightHandRing2
+    400182: RightHandRing3
+    400184: RightHandRing4
+    400186: RightHandThumb1
+    400188: RightHandThumb2
+    400190: RightHandThumb3
+    400192: RightHandThumb4
+    400194: RightLeg
+    400196: RightShoulder
+    400198: RightToeBase
+    400200: RightToeEnd
+    400202: RightUpLeg
+    400204: Spine
+    400206: Spine1
+    400208: Spine2
+    400210: TongueF
+    400212: TongueR
+    400214: TubeBody001
+    400216: UMF SS8350 Bucket 13qt UMF SS8350 Bucket 13qt [183708]
+    400218: UpperLidL
+    400220: UpperLidR
+    2100000: No Name
+    2100002: Clinton IV Pole - Black Plastic
+    2100004: Metal - Chrome
+    2100006: Plastic IV Bag
+    2100008: 'Material #7'
+    2100010: Clinton IV Pole - Charcoal Plastic
+    2100012: 03 - Default
+    2100014: 02 - Default
+    2100016: Stainless Steel - Polished - Dark
+    2100018: Generic
+    2100020: Black Rubber Wheel
+    2100022: UMF - Blue Kick Plate
+    2100024: _Body
+    2100026: _Eye_trans
+    2300000: Clinton IV Stand 5 leg PORTABLE [188307]
+    2300002: Cylinder001
+    2300004: Cylinder002
+    2300006: Cylinder003
+    2300008: InjectorBody
+    2300010: InjectorHead
+    2300012: TubeBody001
+    2300014: UMF SS8350 Bucket 13qt UMF SS8350 Bucket 13qt [183708]
+    3300000: Clinton IV Stand 5 leg PORTABLE [188307]
+    3300002: Cylinder001
+    3300004: Cylinder002
+    3300006: Cylinder003
+    3300008: InjectorBody
+    3300010: InjectorHead
+    3300012: TubeBody001
+    3300014: UMF SS8350 Bucket 13qt UMF SS8350 Bucket 13qt [183708]
+    4300000: Cylinder003
+    4300002: Cylinder001
+    4300004: Clinton IV Stand 5 leg PORTABLE [188307]
+    4300006: Cylinder002
+    4300008: InjectorBody
+    4300010: InjectorHead
+    4300012: TubeBody001
+    4300014: UMF SS8350 Bucket 13qt UMF SS8350 Bucket 13qt [183708]
+    4300016: h_TeethUp
+    4300018: h_TeethDown
+    4300020: h_R_trans
+    4300022: h_R_gland
+    4300024: h_R_eye
+    4300026: h_L_trans
+    4300028: h_L_gland
+    4300030: h_L_eye
+    4300032: H_DDS_HighRes
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: H_DDS_HighRes
+    13700002: h_L_eye
+    13700004: h_L_gland
+    13700006: h_L_trans
+    13700008: h_R_eye
+    13700010: h_R_gland
+    13700012: h_R_trans
+    13700014: h_TeethDown
+    13700016: h_TeethUp
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
