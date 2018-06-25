@@ -99,13 +99,15 @@ public class Preperation : MonoBehaviour
                 DisableAllRenderers();
 
                 onSnap.Invoke();
+                DestroyThis();
             }
         }
     }
 
     public void DestroyThis()
     {
-        Destroy(this);
+        //Destroy(this);
+        this.GetComponent<BoxCollider>().enabled = false;
     }
 
     private void DisableAllRenderers()

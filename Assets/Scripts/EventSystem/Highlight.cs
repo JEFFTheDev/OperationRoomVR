@@ -47,9 +47,14 @@ public class Highlight : MonoBehaviour, IInteractable
                     if (HasMoreMeshes())
                         combinedObject.SetActive(true);
 
-                    Color c = m.color;
-                    m.shader = s;
-                    m.SetColor("_MainColor", c);
+                    if(m.color != null)
+                    {
+                        Color c = m.color;
+                        m.shader = s;
+                        m.SetColor("_MainColor", c);
+                    }
+                    
+                    
                 }
                 else
                 {

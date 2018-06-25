@@ -17,6 +17,7 @@ public class SyringesInjection : MonoBehaviour
     public GameObject rocuroniumTrans;
     public GameObject posR;
     public GameObject posL;
+    public GameObject headGrab;
     public float friction = .05f;
     //public bool preparationDone = false;
     private int counter = 0;
@@ -61,7 +62,7 @@ public class SyringesInjection : MonoBehaviour
             PlaySnapSound();
             Debug.Log("Rocuronium injected.");
             FreezeObject(other.gameObject, rocuroniumTrans);
-            StartCoroutine(Timer(6, delegate { Destroy(other.gameObject); HeadAndMouth.moveable = true; }));
+            StartCoroutine(Timer(6, delegate { Destroy(other.gameObject); HeadAndMouth.moveable = true; headGrab.SetActive(true); }));
         }
     }
 
