@@ -12,32 +12,23 @@ public class AirBalloonOxidating : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
     {
         
-        if(other.gameObject == accept)
+        if(other.gameObject == accept || other.gameObject.name.Substring(0, 8) == accept.name.Substring(0, 8))
         {
             Debug.Log("balloon collision");
-            a = GetComponent<Animator>();
-
+            a = other.GetComponent<Animator>();
+            Debug.Log("Name: " + other.gameObject.name);
             StartCoroutine(Timer(5));
-
         }
     }
 
     IEnumerator Timer(float time)
     {
         a.SetBool("readyToOxidate", true);
+        Debug.Log("animating balloon...");
         yield return new WaitForSeconds(time);
+        Debug.Log("done animating balloon...");
         a.SetBool("readyToOxidate", false);
         headForMedicalSyringesBeforIntubation.GetComponent<SyringesInjection>().enabled = true;
-        //foreach (Transform child in transform)
-        //{
-        //    child.gameObject.AddComponent<Rigidbody>();
-        //    child.gameObject.AddComponent<Highlight>();
-        //    child.gameObject.AddComponent<Grab>();
-        //    child.GetComponent<Rigidbody>().useGravity = false;
-        //    child.gameObject.AddComponent<BoxCollider>();
-        //}
-        //GetComponent<Highlight>().enabled = false;
-        //GetComponent<Grab>().enabled = false;
 
         foreach(GameObject g in nextItems)
         {
@@ -45,15 +36,7 @@ public class AirBalloonOxidating : MonoBehaviour {
             g.GetComponent<Grab>().Freeze(true);
         }
 
+        Destroy(a.gameObject);
         Destroy(this.gameObject);
-        
     }
-
-    //void Update()
-    //{
-    //    if (!a.GetBool("readyToOxidate"))
-    //    {
-
-    //    }
-    //}
 }

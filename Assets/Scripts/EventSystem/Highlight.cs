@@ -37,29 +37,31 @@ public class Highlight : MonoBehaviour, IInteractable
     {
         foreach (MeshRenderer mr in obj.GetComponentsInChildren<MeshRenderer>())
         {
-            Material m = mr.material;
-
-            if (!materialLibrary.ContainsKey(m) && m.shader != s)
-                materialLibrary.Add(m, m.shader);
-
-            if (hightlight)
+            foreach(Material m in mr.materials)
             {
-                if (HasMoreMeshes())
-                    combinedObject.SetActive(true);
+                if (!materialLibrary.ContainsKey(m) && m.shader != s)
+                    materialLibrary.Add(m, m.shader);
 
-                Color c = m.color;
-                m.shader = s;
-                m.SetColor("_MainColor", c);
+                if (hightlight)
+                {
+                    if (HasMoreMeshes())
+                        combinedObject.SetActive(true);
+
+                    Color c = m.color;
+                    m.shader = s;
+                    m.SetColor("_MainColor", c);
+                }
+                else
+                {
+                    if (HasMoreMeshes())
+                        combinedObject.SetActive(false);
+
+                    m.shader = materialLibrary[m];
+                }
+
+                m.shader = hightlight ? s : materialLibrary[m];
             }
-            else
-            {
-                if (HasMoreMeshes())
-                    combinedObject.SetActive(false);
-
-                m.shader = materialLibrary[m];
-            }
-
-            m.shader = hightlight ? s : materialLibrary[m];
+            
             isHighlighted = hightlight;
         }
     }

@@ -20,10 +20,16 @@ public class SyringesInjection : MonoBehaviour
     public float friction = .05f;
     //public bool preparationDone = false;
     private int counter = 0;
+    private AudioSource audioSource;
+    public AudioClip impact;
 
     void Start()
     {
         propofolTrans.SetActive(true);
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = impact;
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 1.0f;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,12 +42,14 @@ public class SyringesInjection : MonoBehaviour
             StartCoroutine(CloseEyes());
             Inject(other.gameObject, propofolTrans);
             FreezeObject(other.gameObject, propofolTrans);
+            PlaySnapSound();
             Debug.Log("Propofol injected.");
             StartCoroutine(Timer(2, delegate { Destroy(other.gameObject); sufentanilTrans.SetActive(true); }));
         }
         else if (other == sufentanil || other.gameObject.name.Substring(0, 5) == sufentanil.name.Substring(0, 5) && counter == 1)
         {
             Inject(other.gameObject, sufentanilTrans);
+            PlaySnapSound();
             Debug.Log("Sufentanil injected.");
             FreezeObject(other.gameObject, sufentanilTrans);
             StartCoroutine(Timer(2, delegate { Destroy(other.gameObject); rocuroniumTrans.SetActive(true); }));
@@ -50,6 +58,7 @@ public class SyringesInjection : MonoBehaviour
         else if (other == rocuronium || other.gameObject.name.Substring(0, 5) == rocuronium.name.Substring(0, 5) && counter == 2)
         {
             Inject(other.gameObject, rocuroniumTrans);
+            PlaySnapSound();
             Debug.Log("Rocuronium injected.");
             FreezeObject(other.gameObject, rocuroniumTrans);
             StartCoroutine(Timer(6, delegate { Destroy(other.gameObject); HeadAndMouth.moveable = true; }));
@@ -91,5 +100,10 @@ public class SyringesInjection : MonoBehaviour
         counter++;
         real.transform.position = transparent.transform.position;
         transparent.SetActive(false);
+    }
+
+    private void PlaySnapSound()
+    {
+        audioSource.PlayOneShot(impact, 0.5F);
     }
 }

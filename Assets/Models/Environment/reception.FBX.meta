@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: f5b4532fe2d7a994bbfab1ee118a436a
+timeCreated: 1529588781
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Board
+    100002: Board.001
+    100004: Box
+    100006: Box.001
+    100008: Cube
+    100010: Cube.016
+    100012: CupBoard
+    100014: CupBoard.001
+    100016: Door_Door1
+    100018: Door_Frame
+    100020: Drawer
+    100022: Drawer.001
+    100024: Drawer.002
+    100026: Drawer.003
+    100028: Glass
+    100030: Knob
+    100032: Knob.001
+    100034: Knob.002
+    100036: Knob.003
+    100038: Lamp
+    100040: Lamp.001
+    100042: LCD
+    100044: Pipe
+    100046: Pipe.001
+    100048: Pipe.002
+    100050: Plane001
+    100052: Plane002
+    100054: Plane003
+    100056: Plane004
+    100058: Plane005
+    100060: Plane006
+    100062: Plane007
+    100064: Plane008
+    100066: Plane009
+    100068: Plane010
+    100070: Plane011
+    100072: Plane012
+    100074: Plane013
+    100076: Plane014
+    100078: //RootNode
+    100080: Support
+    100082: Table
+    100084: Wall
+    100086: Wall_Elektric
+    400000: Board
+    400002: Board.001
+    400004: Box
+    400006: Box.001
+    400008: Cube
+    400010: Cube.016
+    400012: CupBoard
+    400014: CupBoard.001
+    400016: Door_Door1
+    400018: Door_Frame
+    400020: Drawer
+    400022: Drawer.001
+    400024: Drawer.002
+    400026: Drawer.003
+    400028: Glass
+    400030: Knob
+    400032: Knob.001
+    400034: Knob.002
+    400036: Knob.003
+    400038: Lamp
+    400040: Lamp.001
+    400042: LCD
+    400044: Pipe
+    400046: Pipe.001
+    400048: Pipe.002
+    400050: Plane001
+    400052: Plane002
+    400054: Plane003
+    400056: Plane004
+    400058: Plane005
+    400060: Plane006
+    400062: Plane007
+    400064: Plane008
+    400066: Plane009
+    400068: Plane010
+    400070: Plane011
+    400072: Plane012
+    400074: Plane013
+    400076: Plane014
+    400078: //RootNode
+    400080: Support
+    400082: Table
+    400084: Wall
+    400086: Wall_Elektric
+    2100000: Elektric
+    2100002: default
+    2100004: Door_Color
+    2100006: creamroom
+    2100008: wood1
+    2100010: blackroom
+    2100012: wood2
+    2100014: wood3
+    2100016: SilverRoom
+    2100018: glassRoom
+    2300000: Board
+    2300002: Board.001
+    2300004: Box
+    2300006: Box.001
+    2300008: Cube
+    2300010: Cube.016
+    2300012: CupBoard
+    2300014: CupBoard.001
+    2300016: Door_Door1
+    2300018: Door_Frame
+    2300020: Drawer
+    2300022: Drawer.001
+    2300024: Drawer.002
+    2300026: Drawer.003
+    2300028: Glass
+    2300030: Knob
+    2300032: Knob.001
+    2300034: Knob.002
+    2300036: Knob.003
+    2300038: Lamp
+    2300040: Lamp.001
+    2300042: LCD
+    2300044: Pipe
+    2300046: Pipe.001
+    2300048: Pipe.002
+    2300050: Plane001
+    2300052: Plane002
+    2300054: Plane003
+    2300056: Plane004
+    2300058: Plane005
+    2300060: Plane006
+    2300062: Plane007
+    2300064: Plane008
+    2300066: Plane009
+    2300068: Plane010
+    2300070: Plane011
+    2300072: Plane012
+    2300074: Plane013
+    2300076: Plane014
+    2300078: Support
+    2300080: Table
+    2300082: Wall
+    2300084: Wall_Elektric
+    3300000: Board
+    3300002: Board.001
+    3300004: Box
+    3300006: Box.001
+    3300008: Cube
+    3300010: Cube.016
+    3300012: CupBoard
+    3300014: CupBoard.001
+    3300016: Door_Door1
+    3300018: Door_Frame
+    3300020: Drawer
+    3300022: Drawer.001
+    3300024: Drawer.002
+    3300026: Drawer.003
+    3300028: Glass
+    3300030: Knob
+    3300032: Knob.001
+    3300034: Knob.002
+    3300036: Knob.003
+    3300038: Lamp
+    3300040: Lamp.001
+    3300042: LCD
+    3300044: Pipe
+    3300046: Pipe.001
+    3300048: Pipe.002
+    3300050: Plane001
+    3300052: Plane002
+    3300054: Plane003
+    3300056: Plane004
+    3300058: Plane005
+    3300060: Plane006
+    3300062: Plane007
+    3300064: Plane008
+    3300066: Plane009
+    3300068: Plane010
+    3300070: Plane011
+    3300072: Plane012
+    3300074: Plane013
+    3300076: Plane014
+    3300078: Support
+    3300080: Table
+    3300082: Wall
+    3300084: Wall_Elektric
+    4300000: Plane001
+    4300002: Plane002
+    4300004: Plane003
+    4300006: Plane004
+    4300008: Plane005
+    4300010: Plane006
+    4300012: Plane007
+    4300014: Plane008
+    4300016: Plane009
+    4300018: Plane010
+    4300020: Plane011
+    4300022: Plane012
+    4300024: Plane013
+    4300026: Wall
+    4300028: LCD
+    4300030: Lamp
+    4300032: Lamp.001
+    4300034: Table
+    4300036: CupBoard
+    4300038: Cube.016
+    4300040: CupBoard.001
+    4300042: Cube
+    4300044: Board.001
+    4300046: Box
+    4300048: Drawer.001
+    4300050: Knob.001
+    4300052: Drawer.002
+    4300054: Knob.002
+    4300056: Drawer.003
+    4300058: Knob.003
+    4300060: Drawer
+    4300062: Knob
+    4300064: Pipe.002
+    4300066: Pipe.001
+    4300068: Glass
+    4300070: Pipe
+    4300072: Box.001
+    4300074: Support
+    4300076: Board
+    4300078: Wall_Elektric
+    4300080: Door_Frame
+    4300082: Door_Door1
+    4300084: Plane014
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door_Color
+    second: {fileID: 2100000, guid: 41ab5436bef88d14ab1d18158010ce7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Elektric
+    second: {fileID: 2100000, guid: 367dbaf42dea69945a42a38a87617763, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SilverRoom
+    second: {fileID: 2100000, guid: a3c3ff0aeb6a77a40b45cd57613022fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackroom
+    second: {fileID: 2100000, guid: c35cf5de20e352543a0e7d9c13856790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: creamroom
+    second: {fileID: 2100000, guid: d17eaaf9d8943f449805f9789fea2c33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: default
+    second: {fileID: 2100000, guid: 94e71755a40e0754a9f43a2d00463f4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glassRoom
+    second: {fileID: 2100000, guid: f8d9185a14cab6147b085f9b1d7ac7de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood1
+    second: {fileID: 2100000, guid: 31489d502005fd94fb26fc9e1f8cea9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood2
+    second: {fileID: 2100000, guid: e5d821ae437e6a14c9641faa17b2c730, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood3
+    second: {fileID: 2100000, guid: 0899eebae38e47547ba18f9c2921d921, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: granite
+    second: {fileID: 2800000, guid: d281df2ee97b0bb43932bfd57225e3f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wallTexture2
+    second: {fileID: 2800000, guid: 6d92bf7bc9379ee4d91bec2ee5bee89d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2800000, guid: 77ba44ef617399444ae4def6c3673d34, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

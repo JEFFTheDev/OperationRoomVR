@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Valve.VR.InteractionSystem;
 
 public class Preperation : MonoBehaviour
@@ -28,6 +29,8 @@ public class Preperation : MonoBehaviour
     private Vector3 lockPos;
     private Quaternion lockRot;
     private AudioSource audioSource;
+    public bool isPartOfPreperation;
+    public UnityEvent onSnap;
 
     private void Start()
     {
@@ -35,13 +38,13 @@ public class Preperation : MonoBehaviour
         audioSource.clip = impact;
         audioSource.playOnAwake = false;
         audioSource.spatialBlend = 1.0f;
-        
+
 
     }
 
     private void Update()
     {
-        if (Preperation.IsDonePreparing && isInPlace && !stayLocked && !audioSource.isPlaying)
+        if (Preperation.IsDonePreparing && isInPlace && !stayLocked && !audioSource.isPlaying && isPartOfPreperation)
         {
             Grab g = other.GetComponent<Grab>();
             g.Freeze(false);
@@ -85,15 +88,24 @@ public class Preperation : MonoBehaviour
 
                 audioSource.PlayOneShot(impact, 0.5F);
 
-
-                Preperation.preperationCount++;
+                if (isPartOfPreperation)
+                {
+                    Preperation.preperationCount++;
+                }
 
                 lockPos = transform.position;
                 lockRot = transform.rotation;
                 Debug.Log("Lock pos: " + lockPos);
                 DisableAllRenderers();
+
+                onSnap.Invoke();
             }
         }
+    }
+
+    public void DestroyThis()
+    {
+        Destroy(this);
     }
 
     private void DisableAllRenderers()

@@ -8,6 +8,7 @@ public class Grab : MonoBehaviour, IInteractable
 
     private Transform parentBeforeAttach;
     private Rigidbody rb;
+    private bool unFreezeOnGrab;
     public bool isGrabbed;
 
     private void Awake()
@@ -40,6 +41,9 @@ public class Grab : MonoBehaviour, IInteractable
 
     public void OnGrab(Transform hand)
     {
+        if (unFreezeOnGrab)
+            Freeze(false);
+
         AttachTo(hand);
     }
 
@@ -50,6 +54,9 @@ public class Grab : MonoBehaviour, IInteractable
 
     public void Freeze(bool freeze)
     {
+        if (rb == null)
+            rb = GetComponent<Rigidbody>();
+
         rb.constraints = freeze ? RigidbodyConstraints.FreezeAll : RigidbodyConstraints.None;
     }
 
@@ -61,5 +68,10 @@ public class Grab : MonoBehaviour, IInteractable
     public void OnTouchStop(Transform hand)
     {
         //
+    }
+
+    public void UnFreezeOnGrab(bool unFreeze)
+    {
+        unFreezeOnGrab = unFreeze;
     }
 }

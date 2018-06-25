@@ -6,7 +6,6 @@ public class HeadAndMouth : MonoBehaviour {
     public GameObject headGrab;
     public GameObject head;
     int headAux = 0;
-    public GameObject jawGrab;
     public GameObject jaw;
     int jawAux = 0;
     public bool headTilted = false;
@@ -27,17 +26,25 @@ public class HeadAndMouth : MonoBehaviour {
             headAux++;
         }
 
-        if (headAux >= 50)
+        if (headAux >= 50 && !headTilted)
+        {
+            Debug.Log("Head tilted");
             headTilted = true;
+        }
+            
 
-        if (jawGrab.GetComponent<Grab>().isGrabbed && jawAux < 30 && headTilted)
+        if (headGrab.GetComponent<Grab>().isGrabbed && jawAux < 30)
         {
             Vector3 jawRotation = new Vector3(0, -1, 0);
             jaw.transform.Rotate(jawRotation);
             jawAux++;
         }
 
-        if (jawAux >= 30)
+        if (jawAux >= 30 && !jawTilted)
+        {
+            Debug.Log("Head tilted");
             jawTilted = true;
+        }
+            
     }
 }

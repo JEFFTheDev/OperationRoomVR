@@ -36,11 +36,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4439207610116340}
-  - component: {fileID: 114639237783390978}
-  - component: {fileID: 54809183696123134}
-  - component: {fileID: 114401240494707274}
-  - component: {fileID: 114429911875264404}
   - component: {fileID: 136976854700839108}
+  - component: {fileID: 114074011918380610}
+  - component: {fileID: 114802475810410518}
+  - component: {fileID: 54168115955735384}
   m_Layer: 0
   m_Name: SyringeBig
   m_TagString: Syringe
@@ -101,8 +100,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1670601437913196}
-  m_LocalRotation: {x: 0.208888, y: 0.67554855, z: 0.67554855, w: -0.208888}
-  m_LocalPosition: {x: -3.372, y: 0.715, z: -0.46183103}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5507244, y: 1.5507233, z: 1.5507222}
   m_Children:
   - {fileID: 4906484582838318}
@@ -110,7 +109,7 @@ Transform:
   - {fileID: 4256124301841602}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 214.36499}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4906484582838318
 Transform:
   m_ObjectHideFlags: 1
@@ -150,7 +149,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100022, guid: 12b5cdd4239ec934d86c1899b62b3a6f, type: 3}
   m_StaticBatchInfo:
@@ -185,7 +183,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100024, guid: 12b5cdd4239ec934d86c1899b62b3a6f, type: 3}
   m_StaticBatchInfo:
@@ -220,7 +217,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100010, guid: 12b5cdd4239ec934d86c1899b62b3a6f, type: 3}
   - {fileID: 2100012, guid: 12b5cdd4239ec934d86c1899b62b3a6f, type: 3}
@@ -268,7 +264,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1957863587479830}
   m_Mesh: {fileID: 4300182, guid: 12b5cdd4239ec934d86c1899b62b3a6f, type: 3}
---- !u!54 &54809183696123134
+--- !u!54 &54168115955735384
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -283,7 +279,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114401240494707274
+--- !u!114 &114074011918380610
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -291,10 +287,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1670601437913196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f1de035672cfec4fbaff7a0eb44f422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114429911875264404
+  ignoreThese: []
+--- !u!114 &114802475810410518
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -302,66 +299,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1670601437913196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
+  m_Script: {fileID: 11500000, guid: cde15d7ce24a1cd4d84f35d299a39450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachmentFlags: 12
-  attachmentPoint: 
-  catchSpeedThreshold: 0
-  restoreOriginalParent: 0
-  attachEaseIn: 0
-  snapAttachEaseInCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  snapAttachEaseInTime: 0.15
-  attachEaseInAttachmentNames: []
-  attached: 0
-  onPickUp:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDetachFromHand:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  snapAttachEaseInCompleted: 0
---- !u!114 &114639237783390978
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1670601437913196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 783750eec4c41da428b7651515146d14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocityAverageFrames: 5
-  angularVelocityAverageFrames: 11
-  estimateOnAwake: 0
+  isGrabbed: 0
 --- !u!136 &136976854700839108
 CapsuleCollider:
   m_ObjectHideFlags: 1

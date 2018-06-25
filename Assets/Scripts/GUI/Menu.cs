@@ -32,6 +32,12 @@ public class Menu : MonoBehaviour {
 
     public void LoadScene()
     {
+        StartCoroutine(TimerLoad());
+    }
+
+    IEnumerator TimerLoad()
+    {
+        yield return new WaitForSeconds(5f);
         SceneManager.LoadScene(sceneNameToLoad);
     }
 
