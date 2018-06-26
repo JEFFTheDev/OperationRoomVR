@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class SyringesInjection : MonoBehaviour
@@ -62,7 +61,7 @@ public class SyringesInjection : MonoBehaviour
             PlaySnapSound();
             Debug.Log("Rocuronium injected.");
             FreezeObject(other.gameObject, rocuroniumTrans);
-            StartCoroutine(Timer(6, delegate { Destroy(other.gameObject); HeadAndMouth.moveable = true; headGrab.SetActive(true); }));
+            StartCoroutine(Timer(3, delegate { Destroy(other.gameObject); HeadAndMouth.moveable = true; headGrab.SetActive(true); }));
         }
     }
 

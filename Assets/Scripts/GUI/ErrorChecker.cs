@@ -9,24 +9,12 @@ public class ErrorChecker : MonoBehaviour, IInteractable {
     public string onTouchStopError;
     public string onGrabError;
     public string onReleaseError;
-    private AudioSource audioSource;
-    public AudioClip clip;
-
-    private void Start()
-    {
-        audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.clip = clip;
-        audioSource.playOnAwake = false;
-        audioSource.spatialBlend = 1.0f;
-
-    }
 
     public void OnGrab(Transform hand)
     {
         if(onGrabError.Length > 0)
         {
             ErrorRegistry.Register(onGrabError);
-            audioSource.PlayOneShot(clip, 0.5f);
         }
             
     }
@@ -36,7 +24,6 @@ public class ErrorChecker : MonoBehaviour, IInteractable {
         if (onReleaseError.Length > 0)
         {
             ErrorRegistry.Register(onGrabError);
-            
         }
             
     }
@@ -46,7 +33,6 @@ public class ErrorChecker : MonoBehaviour, IInteractable {
         if (onTouchError.Length > 0)
         {
             ErrorRegistry.Register(onGrabError);
-            audioSource.PlayOneShot(clip, 0.5f);
         }
             
     }
@@ -56,7 +42,6 @@ public class ErrorChecker : MonoBehaviour, IInteractable {
         if (onTouchStopError.Length > 0)
         {
             ErrorRegistry.Register(onGrabError);
-            audioSource.PlayOneShot(clip, 0.5f);
         }
             
     }

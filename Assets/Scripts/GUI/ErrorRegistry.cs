@@ -34,6 +34,11 @@ public static class ErrorRegistry{
 
     }
 
+    public static void Reset()
+    {
+        errors = new List<Error>();
+    }
+
     private struct Error
     {
         public string message;
