@@ -30,14 +30,16 @@ public class Menu : MonoBehaviour {
         errorDisplay.text = ErrorRegistry.GetErrorString();
 	}
 
-    public void LoadScene()
+    public void LoadScene(float time)
     {
-        StartCoroutine(TimerLoad());
+        StartCoroutine(TimerLoad(time));
+        ResetPreperation();
+        ResetErrorRegistry();
     }
 
-    IEnumerator TimerLoad()
+    IEnumerator TimerLoad(float time)
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(time);
         SceneManager.LoadScene(sceneNameToLoad);
     }
 
@@ -47,5 +49,15 @@ public class Menu : MonoBehaviour {
         newArrowRot.z *= -1;
         arrow.transform.localRotation = newArrowRot;
         isCollapsed = !isCollapsed;
+    }
+
+    public void ResetPreperation()
+    {
+        Preperation.preperationCount = 0;
+    }
+
+    public void ResetErrorRegistry()
+    {
+        ErrorRegistry.Reset();
     }
 }

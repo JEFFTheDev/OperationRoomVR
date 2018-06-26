@@ -218,7 +218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000010964117, y: 116.99998}
+  m_AnchoredPosition: {x: 0.000010964117, y: 117.00002}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &4966426
@@ -322,6 +322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &6552697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,7 +339,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed can!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &6552698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1362,6 +1363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &40331322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,7 +1380,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed bag!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &40331323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1877,19 +1879,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4439207610116340, guid: 1e9b105a2cdde8949a370185c2a469e9, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.6991857
+      value: -0.69918567
       objectReference: {fileID: 0}
     - target: {fileID: 4439207610116340, guid: 1e9b105a2cdde8949a370185c2a469e9, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.7062802
+      value: 0.7062801
       objectReference: {fileID: 0}
     - target: {fileID: 4439207610116340, guid: 1e9b105a2cdde8949a370185c2a469e9, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.08080177
+      value: 0.08080176
       objectReference: {fileID: 0}
     - target: {fileID: 4439207610116340, guid: 1e9b105a2cdde8949a370185c2a469e9, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.076018296
+      value: -0.07601829
       objectReference: {fileID: 0}
     - target: {fileID: 4439207610116340, guid: 1e9b105a2cdde8949a370185c2a469e9, type: 2}
       propertyPath: m_RootOrder
@@ -2062,7 +2064,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 56811797}
         m_MethodName: DestroyThis
@@ -3312,7 +3314,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Mistral-Air!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &105656984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3326,6 +3327,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1519441831428304, guid: cb018795cef4de84c8bc3464265cdca8,
     type: 2}
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &105656985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3735,6 +3738,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &115881886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3750,7 +3755,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Morfine!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &115881887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4103,6 +4107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1880755443818830, guid: d2b203b555bc6be4c8c7f12b5a3453f5,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 2ffc1b779b0de2b4ebd35526e977b87c, type: 3}
 --- !u!114 &138623069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8113,7 +8119,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed NaCI 0.9%!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &159013222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8127,6 +8132,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1815433935428480, guid: aa94945f596717a40b4befcb3c7df084,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!1 &159641480
 GameObject:
   m_ObjectHideFlags: 0
@@ -11617,6 +11624,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &299006625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11632,7 +11641,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed tube!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &299006626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12579,7 +12587,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Mistral-Air!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &336263632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12616,6 +12623,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 2ffc1b779b0de2b4ebd35526e977b87c, type: 3}
 --- !u!1 &340783017
 GameObject:
   m_ObjectHideFlags: 0
@@ -17695,6 +17704,16 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -174.565
       objectReference: {fileID: 0}
+    - target: {fileID: 114821209239359332, guid: 9be9d116769a3664bb01ea55bd4eb9cb,
+        type: 2}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 940956666}
+    - target: {fileID: 114821209239359332, guid: 9be9d116769a3664bb01ea55bd4eb9cb,
+        type: 2}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ffc1b779b0de2b4ebd35526e977b87c, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9be9d116769a3664bb01ea55bd4eb9cb, type: 2}
   m_IsPrefabParent: 0
@@ -17966,6 +17985,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &410182096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17981,7 +18002,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Magnesiumsulfaat!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &410182097
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18381,6 +18401,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1880755443818830, guid: d2b203b555bc6be4c8c7f12b5a3453f5,
     type: 2}
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &413946789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18665,6 +18687,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &422561720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18680,7 +18704,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Atropine!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!1 &423157243
 GameObject:
   m_ObjectHideFlags: 0
@@ -19871,6 +19894,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1519441831428304, guid: cb018795cef4de84c8bc3464265cdca8,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &465053234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19886,7 +19911,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Mistral-Air!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &465053235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20125,6 +20149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1815433935428480, guid: aa94945f596717a40b4befcb3c7df084,
     type: 2}
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &480949702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21170,6 +21196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1958402312834834, guid: 8e466627a4b806a48ae51341e4974208,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 2ffc1b779b0de2b4ebd35526e977b87c, type: 3}
 --- !u!1 &524622226
 GameObject:
   m_ObjectHideFlags: 0
@@ -22795,6 +22823,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1088473771354704, guid: c4660c3f9ac5c4f4ebf5acb36d99323c,
     type: 2}
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &593841103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24460,7 +24490,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed IV bag!
   onReleaseError: 
-  clip: {fileID: 0}
 --- !u!114 &656602672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24498,6 +24527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1815433935428480, guid: aa94945f596717a40b4befcb3c7df084,
     type: 2}
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &657063762 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 101404, guid: 2276b305958179341a279206cc4f79c1, type: 3}
@@ -24527,6 +24558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &657063766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24542,7 +24575,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Serotonine!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &657063767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24720,6 +24752,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &666812783
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24747,7 +24781,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Amoxicilline!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &666812785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25254,6 +25287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &684538074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25269,7 +25304,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Atropine!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &684538075
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25495,7 +25529,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Mistral-Air!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &690320555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25509,6 +25542,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1519441831428304, guid: cb018795cef4de84c8bc3464265cdca8,
     type: 2}
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &690320556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27227,7 +27262,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400372, guid: 2276b305958179341a279206cc4f79c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400372, guid: 2276b305958179341a279206cc4f79c1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29380,6 +29415,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1656184947599062, guid: 0d8b36094a7de5e47a21006cf622785d,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &820608164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29407,7 +29444,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed bottle!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!1 &826192755
 GameObject:
   m_ObjectHideFlags: 0
@@ -30877,6 +30913,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &901691815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30892,7 +30930,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Fenobarbital!
   onReleaseError: 
-  clip: {fileID: 0}
 --- !u!65 &901691816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31988,6 +32025,115 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 937835866}
   m_Mesh: {fileID: 4300322, guid: e14308f26958b504ba095c8d6fdb5072, type: 3}
+--- !u!1 &940956664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 940956665}
+  - component: {fileID: 940956666}
+  m_Layer: 0
+  m_Name: CartAudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &940956665
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 940956664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.293, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 766952256}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &940956666
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 940956664}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &946881548 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 101368, guid: 2276b305958179341a279206cc4f79c1, type: 3}
@@ -32016,6 +32162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &946881552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32031,7 +32179,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed tube!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &946881553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32438,11 +32585,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400010, guid: 18b4279dfa123284688f02ac130071f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5151
+      value: -4.515
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 18b4279dfa123284688f02ac130071f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0071
+      value: 1.009
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 18b4279dfa123284688f02ac130071f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32496,10 +32643,6 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 69ecaf7bbb71d8248a5b726aaed00758, type: 2}
-    - target: {fileID: 400010, guid: 18b4279dfa123284688f02ac130071f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18b4279dfa123284688f02ac130071f8, type: 3}
   m_IsPrefabParent: 0
@@ -33426,6 +33569,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &982091861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33441,7 +33586,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed NaCI 0.9%!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &982091862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34371,7 +34515,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: db80cc27c704b764cadf84599fcb92cf, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1019370442}
-  m_LocalRotation: {x: 0.5369643, y: -0.45534012, z: -0.4438962, w: 0.55433834}
+  m_LocalRotation: {x: 0.53696424, y: -0.4553401, z: -0.44389617, w: 0.5543383}
   m_LocalPosition: {x: 0.28200126, y: 0.03910005, z: 0.019112762}
   m_LocalScale: {x: 0.099999994, y: 0.09999999, z: 0.099999994}
   m_Children:
@@ -34795,6 +34939,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1030376688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34810,7 +34956,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Dobutamine!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1030376689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35398,7 +35543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1056219437
 Transform:
   m_ObjectHideFlags: 0
@@ -36662,6 +36807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &1102366788
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36689,7 +36836,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Metoclopramide!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!1 &1104814990
 GameObject:
   m_ObjectHideFlags: 0
@@ -37570,14 +37716,14 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1133182766
 AudioSource:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1133182765}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 82bcbe2714c1ad541944a4c4c14d5415, type: 3}
@@ -38434,6 +38580,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1152848698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38449,7 +38597,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed bottle!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1152848699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39396,8 +39543,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 244308419}
   m_HandleRect: {fileID: 244308418}
   m_Direction: 2
-  m_Value: 0.00000013041704
-  m_Size: 0.60982984
+  m_Value: 0
+  m_Size: 0.6100001
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -40970,6 +41117,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1815433935428480, guid: aa94945f596717a40b4befcb3c7df084,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1228181366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40985,7 +41134,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed NaCI 0.9%!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &1228181367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41111,7 +41259,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54369998752132184, guid: daf23cb108cc65c449e40d1d5e438cd7, type: 2}
-    - {fileID: 0}
+    - {fileID: 114799618862212760, guid: daf23cb108cc65c449e40d1d5e438cd7, type: 2}
     - {fileID: 114956731025032764, guid: daf23cb108cc65c449e40d1d5e438cd7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: daf23cb108cc65c449e40d1d5e438cd7, type: 2}
   m_IsPrefabParent: 0
@@ -41141,12 +41289,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 776658982}
         m_MethodName: LoadScene
-        m_Mode: 1
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -41847,6 +41995,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1815433935428480, guid: aa94945f596717a40b4befcb3c7df084,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1249713431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41862,7 +42012,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed NaCI 0.9%
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!1 &1253322728
 GameObject:
   m_ObjectHideFlags: 0
@@ -42561,7 +42710,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4810093251734238, guid: 8a894274c5118024ab346338415498b1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.0039999783
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4810093251734238, guid: 8a894274c5118024ab346338415498b1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -42607,6 +42756,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1282899165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42622,7 +42773,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Metformine!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &1282899166
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42892,6 +43042,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &1292166697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42919,7 +43071,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Adrenaline!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1292166699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46660,6 +46811,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1088473771354704, guid: c4660c3f9ac5c4f4ebf5acb36d99323c,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 2ffc1b779b0de2b4ebd35526e977b87c, type: 3}
 --- !u!1 &1381089162
 GameObject:
   m_ObjectHideFlags: 0
@@ -46762,6 +46915,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1656184947599062, guid: 0d8b36094a7de5e47a21006cf622785d,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1382054941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46777,7 +46932,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed blue bottle!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &1382054942
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47180,6 +47334,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1405512776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47195,7 +47351,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed tube!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1405512777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47859,7 +48014,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed red pillbox!
   onReleaseError: 
-  clip: {fileID: 0}
 --- !u!114 &1425699137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47873,6 +48027,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1656184947599062, guid: 0d8b36094a7de5e47a21006cf622785d,
     type: 2}
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1 &1427821771
 GameObject:
   m_ObjectHideFlags: 0
@@ -53254,6 +53410,21 @@ Prefab:
       propertyPath: errorDisplay
       value: 
       objectReference: {fileID: 1468009749}
+    - target: {fileID: 114580033184221200, guid: 4482cca76957b214b9aedeb4023a1f83,
+        type: 2}
+      propertyPath: time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114514612414778054, guid: 4482cca76957b214b9aedeb4023a1f83,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114580033184221200, guid: 4482cca76957b214b9aedeb4023a1f83,
+        type: 2}
+      propertyPath: sceneNameToLoad
+      value: Tutorial
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4482cca76957b214b9aedeb4023a1f83, type: 2}
   m_IsPrefabParent: 0
@@ -54287,6 +54458,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1301508224748310, guid: 3a824f7e0751f9640acefa6777b3e7e7,
     type: 2}
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &1488797491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54694,7 +54867,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Pancuronium!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &1520954669
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54732,6 +54904,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!1 &1521996301
 GameObject:
   m_ObjectHideFlags: 0
@@ -57869,6 +58043,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1815433935428480, guid: aa94945f596717a40b4befcb3c7df084,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1631081517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57896,7 +58072,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed NaCI 0.9%!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &1631081519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58689,6 +58864,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1646500990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58704,7 +58881,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed bottle!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1646500991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58884,7 +59060,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Mistral-Air!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1647787741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58921,6 +59096,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 2ffc1b779b0de2b4ebd35526e977b87c, type: 3}
 --- !u!1 &1647945578
 GameObject:
   m_ObjectHideFlags: 0
@@ -60715,6 +60892,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1301508224748310, guid: 3a824f7e0751f9640acefa6777b3e7e7,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 2ffc1b779b0de2b4ebd35526e977b87c, type: 3}
 --- !u!1 &1718239765
 GameObject:
   m_ObjectHideFlags: 0
@@ -61491,7 +61670,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed can!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1759012572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61528,6 +61706,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 2ffc1b779b0de2b4ebd35526e977b87c, type: 3}
 --- !u!1 &1759275061
 GameObject:
   m_ObjectHideFlags: 0
@@ -62519,6 +62699,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1656184947599062, guid: 0d8b36094a7de5e47a21006cf622785d,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &1795394193
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62546,7 +62728,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed red bottle!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!1 &1800260580
 GameObject:
   m_ObjectHideFlags: 0
@@ -63135,6 +63316,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1139107969448356, guid: c28f013d77db10243a3a10b9cf99d4ec,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 2ffc1b779b0de2b4ebd35526e977b87c, type: 3}
 --- !u!65 &1812248420
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63617,6 +63800,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1659352691643764, guid: daf23cb108cc65c449e40d1d5e438cd7,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 2ffc1b779b0de2b4ebd35526e977b87c, type: 3}
 --- !u!114 &1828287711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63639,8 +63824,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.60733503, y: 0.31524947, z: 0.29413465}
-  m_Center: {x: 0.094008885, y: 0.1838308, z: 0.0015744149}
+  m_Size: {x: 0.46191096, y: 0.3129437, z: 0.3854449}
+  m_Center: {x: 0, y: 0.15616986, z: 0}
 --- !u!1 &1830113434
 GameObject:
   m_ObjectHideFlags: 0
@@ -66108,7 +66293,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Norepinephrine!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1923943533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66122,6 +66306,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &1923943536
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66741,6 +66927,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1938317166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66756,7 +66944,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Fenobarbital!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &1938317167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68101,7 +68288,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Morfine!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &1984816474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68115,6 +68301,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &1984816475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68437,6 +68625,7 @@ MonoBehaviour:
   rocuroniumTrans: {fileID: 1229808066}
   posR: {fileID: 435468848}
   posL: {fileID: 575634254}
+  headGrab: {fileID: 1056219436}
   friction: 0.05
   impact: {fileID: 8300000, guid: 2ffc1b779b0de2b4ebd35526e977b87c, type: 3}
 --- !u!65 &1999119386
@@ -73476,6 +73665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 0}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &2108220754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73491,7 +73682,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed bottle!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &2108220755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73545,6 +73735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &2111406426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73560,7 +73752,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Fragmin!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!1 &2112173164
 GameObject:
   m_ObjectHideFlags: 0
@@ -73653,6 +73844,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1139107969448356, guid: c28f013d77db10243a3a10b9cf99d4ec,
     type: 2}
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &2118392533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74091,7 +74284,6 @@ MonoBehaviour:
   onTouchStopError: 
   onGrabError: Grabbed Clavalaanzuur!
   onReleaseError: 
-  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!114 &2133138125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74117,6 +74309,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1670601437913196, guid: 1e9b105a2cdde8949a370185c2a469e9,
     type: 2}
+  audioSource: {fileID: 940956666}
+  clip: {fileID: 8300000, guid: 28c9463209fcfd6468e356b17e6a0bc7, type: 3}
 --- !u!65 &2133138127
 BoxCollider:
   m_ObjectHideFlags: 0

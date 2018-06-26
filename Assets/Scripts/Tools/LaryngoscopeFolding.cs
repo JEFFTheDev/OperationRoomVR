@@ -4,16 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 
-public class LaryngoscopeFolding : MonoBehaviour
+public class LaryngoscopeFolding : MonoBehaviour, IInteractable
 {
 
     Animator animator;
     public GameObject scope;
     public Light spotlight;
+    public AudioSource audioSource;
+    public AudioClip clip;
     // Use this for initialization
     void Start()
     {
         animator = scope.GetComponent<Animator>();
+        audioSource.clip = clip;
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 1.0f;
     }
 
     // Update is called once per frame
@@ -38,6 +43,26 @@ public class LaryngoscopeFolding : MonoBehaviour
             animator.SetBool("unfold", false);
             spotlight.enabled = false;
         }
+    }
+
+    public void OnGrab(Transform hand)
+    {
+        audioSource.PlayOneShot(clip, 0.5f);
+    }
+
+    public void OnRelease(Transform hand)
+    {
+        //
+    }
+
+    public void OnTouch(Transform hand)
+    {
+        //
+    }
+
+    public void OnTouchStop(Transform hand)
+    {
+        //
     }
 }
     
